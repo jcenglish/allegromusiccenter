@@ -1,0 +1,429 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Allegro Music Center</title>
+        <link href='http://fonts.googleapis.com/css?family=Muli|Open+Sans:400,300,700,900' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+        <link rel="stylesheet" type="text/css" href="slick/slick.css">
+        <link rel="stylesheet" type="text/css" href="css/font-icons.css">
+        <link rel="stylesheet" media="screen and (max-width:63.5em)" href="css/style-sm.css">
+        <link rel="stylesheet" media="screen and (min-width:63.5625em)" href="css/style-lrg.css">
+
+    </head>
+
+    <body>
+        <header>
+            <!--#config timefmt="%A" --> <!--#echo var="DATE_LOCAL" -->
+            <a href="." class="logo large"><img src="img/logo_allegro_big.png" alt=''></a><!--
+            --><div class='container'>
+                <a href="." class="logo small"><img src="img/logo_allegro_big.png" alt=''></a><!--
+                --><div class="search">
+                    <input type="text" placeholder="Search"><a class='button' href=""><img src="img/icon_search.png" alt=""></a>
+                </div><!--
+                --><div id="nav-ecomm">
+                    <span id="nav-open" class="button small"><img src='img/icon_menu.png' alt=''><span>Menu</span></span><a href="#" class="button"><img src='img/icon_user.png' alt=''><span>My Account</span></a><a href="#" class="button"><img src='img/icon_basket.png' alt=''><span>My Cart</span><i class="large icon-triangle-down"></i></a>
+                </div><!--
+                --><nav  id="nav-primary">
+                    <div class="small" id="nav-close">
+                        <img src='img/icon_menu-close.png' alt=''>Menu
+                    </div>
+                    <ul id="nav-level-1">
+                        <li class="nav-item">
+                            <span class="has-nav-sub">Products<i class="large icon-triangle-down"></i><i class="large icon-triangle-up"></i><i class="small icon-chevron-right"></i></span>
+                            <ul class="nav-level-2 nav-sub">
+                                <li class="nav-item">
+                                    <span class="has-nav-sub">String Instruments<i class="small icon-chevron-right"></i><i class="small icon-chevron-down"></i></span>
+                                    <ul class="nav-level-3 nav-sub">
+                                        <li class="nav-item"><a href="#" class="">Violins</a></li>
+                                        <li class="nav-item"><a href="#" class="">Violas</a></li>
+                                        <li class="nav-item"><a href="#" class="">Cellos</a></li>
+                                        <li class="nav-item"><a href="#" class="">Basses</a></li>
+                                        <!--<div class="large"><a href="#">View All String Instruments</a></div>-->
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <span class="has-nav-sub">Bows<i class="small icon-chevron-right"></i><i class="small icon-chevron-down"></i></span>
+                                    <ul class="nav-level-3 nav-sub">
+                                        <li class="nav-item"><a href="#" class="">Violin Bows</a></li>
+                                        <li class="nav-item"><a href="#" class="">Viola Bows</a></li>
+                                        <li class="nav-item"><a href="#" class="">Cello Bows</a></li>
+                                        <li class="nav-item"><a href="#" class="">Bass Bows</a></li>
+                                        <!--<div class="large"><a href="#">View All Bows</a></div>-->
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <span class="has-nav-sub">Band &amp; Orchestra<i class="small icon-chevron-right"></i><i class="small icon-chevron-down"></i></span>
+                                    <ul class="nav-level-3 nav-sub">
+                                        <li class="nav-item"><a href="#" class="">Clarinets</a></li>
+                                        <li class="nav-item"><a href="#" class="">Flutes</a></li>
+                                        <li class="nav-item"><a href="#" class="">French Horns</a></li>
+                                        <li class="nav-item"><a href="#" class="">Oboes</a></li>
+                                        <li class="nav-item"><a href="#" class="">Piccolos</a></li>
+                                        <li class="nav-item"><a href="#" class="">Trombones</a></li>
+                                        <li class="nav-item"><a href="#" class="">Trumpets</a></li>
+                                        <!--<div class="large"><a href="#">View All Band &amp; Orchestra</a></div>-->
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <span class="has-nav-sub">Guitars<i class="small icon-chevron-right"></i><i class="small icon-chevron-down"></i></span>
+                                    <ul class="nav-level-3 nav-sub">
+                                        <li class="nav-item"><a href="#" class="">Nylon String</a></li>
+                                        <li class="nav-item"><a href="#" class="">Steel String</a></li>
+                                        <li class="nav-item"><a href="#" class="">Nylon String Acoustic-Electric</a></li>
+                                        <li class="nav-item"><a href="#" class="">Steel String Acoustic-Electric</a></li>
+                                        <li class="nav-item"><a href="#" class="">12-String</a></li>
+                                        <li class="nav-item"><a href="#" class="">12-String Acoustic-Electric</a></li>
+                                        <li class="nav-item"><a href="#" class="">Left-Handed Nylon String</a></li>
+                                        <!--<div class="large"><a href="#">View All Guitars</a></div>-->
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <span class="has-nav-sub">Cases &amp; Bags<i class="small icon-chevron-right"></i><i class="small icon-chevron-down"></i></span>
+                                    <ul class="nav-level-3 nav-sub">
+                                        <li class="nav-item"><a href="#" class="">Violin Cases</a></li>
+                                        <li class="nav-item"><a href="#" class="">Viola Cases</a></li>
+                                        <li class="nav-item"><a href="#" class="">Cello Cases</a></li>
+                                        <li class="nav-item"><a href="#" class="">Bass Cases</a></li>
+                                        <li class="nav-item"><a href="#" class="">Guitar Cases</a></li>
+                                        <!--<div class="large"><a href="#">View All Cases &amp; Bags</a></div>-->
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <span class="has-nav-sub">Accessories<i class="small icon-chevron-right"></i><i class="small icon-chevron-down"></i></span>
+                                    <ul class="nav-level-3 nav-sub">
+                                        <li class="nav-item"><a href="#" class="">Metronomes &amp; Tuners</a></li>
+                                        <li class="nav-item"><a href="#" class="">Stands</a></li>
+                                        <li class="nav-item"><a href="#" class="">String Instrument Accessories</a></li>
+                                        <li class="nav-item"><a href="#" class="">Strings</a></li>
+                                        <!--<div class="large"><a href="#">View All Accessories</a></div>-->
+                                    </ul>
+                                </li>
+                                <li class="nav-item"><a href="#">Sheet Music<i class="small icon-chevron-right"></i></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="about.html">About Us</a></li>
+                        <li class="nav-item"><a href="rentals.html">Rentals</a></li>
+                        <li class="nav-item"><a href="music-education.html">Music Education</a></li>
+                        <li class="nav-item"><span class="has-nav-sub">Services<i class="large icon-triangle-down"></i><i class="large icon-triangle-up"></i><i class="small icon-chevron-right"></i><i class="small icon-chevron-down"></i></span>
+                            <ul class="nav-level-2 nav-sub">
+                                <li class="nav-item"><a href="repairs-restoration.html" class="inverted-colors ">Repairs &amp; Restoration</a></li>
+                                <li class="nav-item"><a href="repairs-restoration.html#a_care-maint" class="inverted-colors ">Instrument Care &amp; Maintenance</a></li>
+                                <li class="nav-item"><a href="repairs-restoration.html#a_appraisals" class="inverted-colors ">Appraisals</a></li>
+                                <li class="nav-item"><a href="repairs-restoration.html#a_consignment" class="inverted-colors ">Consignment</a></li>
+                                <li class="nav-item"><a href="repairs-restoration.html#a_loan" class="inverted-colors ">Instrument Loan</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="#">Blog</a></li>
+                        <li class="nav-item"><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <!--
+                    <div id ="level-2-bg" class="large"></div>
+                    <div id ="level-3-bg" class="large"></div>
+                    -->
+                    <div id="nav-back" class="small"><i class="icon-left-open-big"></i>Main Menu</div>
+                </nav>
+            </div><div id="overlay-small"></div>
+        </header>
+
+
+        <!-- ________________________________________________________________________-->
+        <!-- MAIN CONTENT ___________________________________________________________-->
+        <!-- ________________________________________________________________________-->
+        
+         <main class="page_not-home page_rentals_"  id="page_rentals_string">
+            <div id="overlay-large"></div>
+            <div id ="nav_rental">
+                <div class='wrap'><div class="prev"><a href="rentals_guitar.html"><i class="icon-chevron-left"></i><span class='large'>Classical Guitar Rentals</span></a></div><!--
+                    --><div class='wrap_img'><div class='aligner'></div><img src="http://placehold.it/80x110" alt=''></div><!--
+                    --><div class="next"><a href="rentals_brass-woodwind.html"><span class='large'>Brass &amp; Woodwind Rentals</span><i class="icon-chevron-right"></i></a></div></div>
+                <div class='title'><h1>String Rentals</h1></div>
+            </div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellecenter ntesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+
+                <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
+
+<table id="tb_rental-prices">
+                    <thead>
+                        <tr>
+                            <th colspan="2">Instrument</th><th class="small">Model</th><th>Rental Fee</th><th>Maintenance<br>&amp; Replacement</th><th>Total<span>(Per Month)</span></th><th>Extended Total<br><span>3-Month Period</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2" class="instrument">Violin</td><td class="model">Student Model</td><td>$17.00</td><td>$3.00</td><td>$20.00</td><td>$60.00</td>
+                        </tr><!--
+                        --><tr>
+                            <td class="model">Advanced Model</td><td>$30.00</td><td>$5.00</td><td>$35.00</td><td>$105.00</td>
+                        </tr><!--
+                        --><tr>
+                            <td rowspan="2" class="instrument">Viola</td><td class="model">Student Model</td><td>$17.00</td><td>$3.00</td><td>$20.00</td><td>$60.00</td>
+                        </tr><!--
+                        --><tr>
+                            <td class="model">Advanced Model</td><td>$35.00</td><td>$5.00</td><td>$40.00</td><td>$120.00</td>
+                        </tr><!--
+                        --><tr>
+                            <td rowspan="2" class="instrument">Cello</td><td class="model">Student Model</td><td>$35.00</td><td>$5.00</td><td>$40.00</td><td>$120.00</td>
+                        </tr><!--
+                        --><tr>
+                            <td class="model">Advanced Model</td><td>$70.00</td><td>$7.00</td><td>$77.00</td><td>$231.00</td>
+                        </tr><!--
+                        --><tr>
+                            <td class="instrument">Bass</td><td class="model">-</td><td>$125.00</td><td>$10.00</td><td>$135.00</td><td>$405.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <ul id="list_rental-policy">
+                    <li>Prices shown do not include applicable sales tax.</li>
+                    <li>Purchase of the Maintenance &amp; Replacement is required for all rentals.</li>
+                    <li>Except as noted, there is an initial 3-month minimum rental period.</li>
+                    <li>Prices subject to change without notice.</li>
+                </ul>
+
+                <h2>Determine the right size instrument for you</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellecenter ntesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+            </div>
+            <h3>Violin Sizing Guide</h3>
+
+            <div class="wrap"><table class="tb_sizing-guide">
+                <thead>
+                    <tr>
+                        <th>2&ndash;3 years</th>
+                        <th colspan="3">3&ndash;5 years</th>
+                        <th>4&ndash;7 years</th>
+                        <th>6&ndash;10 years</th>
+                        <th>9&ndash;11 years</th>
+                        <th>9&ndash;Adult</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <tr class="sizes-inst">
+                        <td>1&frasl;32</td>
+                        <td class="border-short"><span>1&frasl;16</span></td>
+                        <td class="border-short"><span>1&frasl;10</span></td>
+                        <td>1&frasl;8</td>
+                        <td>1&frasl;4</td>
+                        <td>1&frasl;2</td>
+                        <td>3&frasl;4</td>
+                        <td>4&frasl;4</td>
+                    </tr>
+                    <tr class="sizes-arm">
+                        <td>Under 14<span>&Prime;</span></td>
+                        <td>14<span>&Prime;</span>&ndash;15 3&frasl;8<span>&Prime;</span></td>
+                        <td>15 3&frasl;8<span>&Prime;</span>&ndash;16 7&frasl;8<span>&Prime;</span></td>
+                        <td>16 7&frasl;8<span>&Prime;</span>&ndash;18 1&frasl;2<span>&Prime;</span></td>
+                        <td>18 1&frasl;2<span>&Prime;</span>&ndash;20 3&frasl;4<span>&Prime;</span></td>
+                        <td>20 3&frasl;4<span>&Prime;</span>&ndash;22 1&frasl;4<span>&Prime;</span></td>
+                        <td>22 1&frasl;4<span>&Prime;</span>&ndash;23 5&frasl;8<span>&Prime;</span></td>
+                        <td>Over 23 5&frasl;8<span>&Prime;</span></td>
+                    </tr>
+                </tbody>
+            </table></div>
+
+            <h3>Viola Sizing Guide</h3>
+
+            <div class="wrap"><table class="tb_sizing-guide">
+                <thead>
+                    <tr>
+                        <th> </th>
+                        <th>8&ndash;10 years</th>
+                        <th>8&ndash;11 years</th>
+                        <th>10&ndash;12 years</th>
+                        <th>12&ndash;15 years</th>
+                        <th colspan="2">15&ndash;Adult</th>
+                        <th> </th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <tr class="sizes-inst">
+                        <td></td>
+                        <td>12&Prime;</td>
+                        <td>13&Prime; &amp; 14&Prime;</td>
+                        <td>15&Prime;</td>
+                        <td>15.5&Prime;</td>
+                        <td class="border-short"><span>16&Prime;</span></td>
+                        <td>16.5&Prime;</td>
+                        <td></td>
+                    </tr>
+                    <tr class="sizes-arm">
+                        <td></td>
+                        <td>Under 14<span>&Prime;</span></td>
+                        <td>14<span>&Prime;</span>&ndash;15 3&frasl;8<span>&Prime;</span></td>
+                        <td>15 3&frasl;8<span>&Prime;</span>&ndash;16 7&frasl;8<span>&Prime;</span></td>
+                        <td>16 7&frasl;8<span>&Prime;</span>&ndash;18 1&frasl;2<span>&Prime;</span></td>
+                        <td>18 1&frasl;2<span>&Prime;</span>&ndash;20 3&frasl;4<span>&Prime;</span></td>
+                        <td>20 3&frasl;4<span>&Prime;</span>&ndash;22 1&frasl;4<span>&Prime;</span></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table></div>
+
+            <h3>Cello Sizing Guide</h3>
+            <div class="content">
+                <p>
+                    To determine the approximate correct size cello your child needs:
+                </p>
+                <ol>
+                    <li>Seat the child so that the knees are bent at a ninety degree angle.</li>
+                    <li>With the endpin of the cello set at around 12 inches and the cello at a 45 degree angle, 
+                        the instrument should rest such that the upper rim of the cello body rests on the sternum, 
+                        and thw left knee contacts the curve below the lower bout corner.</li>
+                    <li>The C-string peg (for the thickest string) should be near the left ear, with the neck a 
+                        few inches away from the shoulder, and the left hand able to reach both ends of the fingerboard with ease.</li>
+                </ol>
+            </div>
+            <div class="wrap"><table class="tb_sizing-guide">
+                <thead>
+                    <tr>
+                        <th> </th>
+                        <th class="border-none">2&ndash;4 years</th>
+                        <th class="border-none">4&ndash;6 years</th>
+                        <th>5&ndash;7 years</th>
+                        <th>7&ndash;11 years</th>
+                        <th>1&ndash;15 years</th>
+                        <th>15&ndash;Adult</th>
+                        <th> </th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <tr class="sizes-inst">
+                        <td></td>
+                        <td class="border-short"><span>1&frasl;10</span></td>
+                        <td class="border-short"><span>1&frasl;8</span></td>
+                        <td>1&frasl;4</td>
+                        <td>1&frasl;2</td>
+                        <td>3&frasl;4</td>
+                        <td>4&frasl;4</td>
+                        <td></td>
+                    </tr>
+                    <tr class="sizes-arm">
+                        <td></td>
+                        <td colspan="3">Under 14<span>&Prime;</span></td>
+                        <td>18 1&frasl;2<span>&Prime;</span>&ndash;20 3&frasl;4<span>&Prime;</span></td>
+                        <td>20 3&frasl;4<span>&Prime;</span>&ndash;22 1&frasl;4<span>&Prime;</span></td>
+                        <td>22 1&frasl;4<span>&Prime;</span>&ndash;23 5&frasl;8<span>&Prime;</span></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+            <div class="content"><div class='button small'><a href=''>Back to Rentals</a></div></div>
+
+        </main>
+<!-- ________________________________________________________________________-->
+        <!-- FOOTER _________________________________________________________________-->
+        <!-- ________________________________________________________________________-->
+        <footer>
+            <div id="accepted-cards">
+                We accept <img src="img/cards.png" alt="VISA, MasterCard, Paypal, American Express">
+            </div>
+            <div class="fat-footer">
+                <div class="subscribe small">
+                    <h2>Sign up for emails</h2>
+                    <div class="wrap"><div><input type="text" placeholder="you@where.com"></div><a href="#" class="button">Subscribe</a></div>
+                </div>
+                <nav>
+                    <div class="large">
+                        <h2>Customer Service</h2>
+                        <ul>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms of Payment</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms of Sale</a>
+                            </li>
+                            <li>
+                                <a href="#">Delivery Terms and Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#">Returns and Refunds</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="large">
+                        <h2>Information</h2>
+                        <ul>
+                            <li>
+                                <a href="#">Affiliate</a>
+                            </li>
+                            <li>
+                                <a href="#">Cookies</a>
+                            </li>
+                            <li>
+                                <a href="#">How to Shop</a>
+                            </li>
+                            <li>
+                                <a href="#">About Allegro</a>
+                            </li>
+                            <li>
+                                <a href="#">Investor Relations</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="address large">
+                        <h2>Store</h2>
+                        <span>
+                            6869 SW 8th Street<br>
+                            Miami, FL 33144<br>
+                        </span>
+                    </div>
+                    <div class="social">
+                        <h2>Social</h2>
+                        <ul>
+                            <li><a href="#"><i class="icon-twitter-circled"></i></a></li>
+                            <li><a href="#"><i class="icon-pinterest-circled"></i></a></li>
+                            <li><a href="#"><i class="icon-facebook-circled"></i></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#"><i class="icon-gplus-circled"></i></a></li>
+                            <li><a href="#"><i class="icon-tumblr-circled"></i></a></li>
+                            <li><a href="#"><i class="icon-vimeo-circled"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="large">
+                        <img src="http://placehold.it/100x100" alt=''>
+                    </div>
+                </nav>
+
+            </div>
+            <div class="copyright">
+                <div class="wrap">
+                    <div class="wrap">
+                        <ul>
+                            <li><a href="#">Privacy &amp; Cookies</a></li>
+                            <li><a href="#">Terms &amp; Conditions</a></li>
+                            <li class="large"><a href="#">Accessibility</a></li>
+                            <li class="large"><a href="#">Store Directory</a></li>
+                            <li class="large"><a href="#">About Us</a></li>
+                        </ul>
+                    </div><!--
+                    --><div class="wrap"><span>&copy; Allegro Music Center All Rights Reserved</span></div>
+                </div>
+            </div>
+        </footer> 
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+
+        <script src="js/app.js"></script>
+        <script src="js/jquery-nav-plugin.js"></script>
+
+
+    </body>
+
+</html>

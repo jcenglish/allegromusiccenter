@@ -1,0 +1,3064 @@
+/********************************************
+
+Theme: Allegro Music Center v1
+Programmer: Jasmine English (contact@jasmineenglish.com)
+Designer: Alondra Milanes (alondra@allegromusiccenter.com)
+
+*********************************************/
+/*----------------------------------------------------------------------------*/
+/* UTILITY CLASSES -----------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+.show {
+  display: block !important; }
+
+.hide {
+  display: none !important; }
+
+.invisible {
+  visibility: hidden; }
+
+.float-l {
+  float: left; }
+
+.float-r {
+  float: right; }
+
+.clear-r {
+  clear: right; }
+
+.clear-l {
+  clear: left; }
+
+.align-center, #page_lesson_piano .content .music-lessons > div div a:visited, #page_lesson_piano .content .music-lessons > div div a:link, #page_lesson_piano .content .music-lessons > div div a:hover, #page_lesson_piano .content .music-lessons > div div a:active, #page_lesson_strings .content .music-lessons > div div a:visited, #page_lesson_strings .content .music-lessons > div div a:link, #page_lesson_strings .content .music-lessons > div div a:hover, #page_lesson_strings .content .music-lessons > div div a:active, #page_lesson_drum .content .music-lessons > div div a:visited, #page_lesson_drum .content .music-lessons > div div a:link, #page_lesson_drum .content .music-lessons > div div a:hover, #page_lesson_drum .content .music-lessons > div div a:active, #page_lesson_guitar
+.content .music-lessons > div div a:visited, #page_lesson_guitar
+.content .music-lessons > div div a:link, #page_lesson_guitar
+.content .music-lessons > div div a:hover, #page_lesson_guitar
+.content .music-lessons > div div a:active, #page_lesson_voice .content .music-lessons > div div a:visited, #page_lesson_voice .content .music-lessons > div div a:link, #page_lesson_voice .content .music-lessons > div div a:hover, #page_lesson_voice .content .music-lessons > div div a:active, #page_lesson_doublebass .content .music-lessons > div div a:visited, #page_lesson_doublebass .content .music-lessons > div div a:link, #page_lesson_doublebass .content .music-lessons > div div a:hover, #page_lesson_doublebass .content .music-lessons > div div a:active, #page_suzuki .content .music-lessons > div div a:visited, #page_suzuki .content .music-lessons > div div a:link, #page_suzuki .content .music-lessons > div div a:hover, #page_suzuki .content .music-lessons > div div a:active, #page_lesson_piano h1, #page_lesson_strings h1, #page_lesson_drum h1, #page_lesson_guitar h1,
+#page_lesson_voice h1, #page_lesson_doublebass h1, #page_suzuki h1, #page_lesson_piano .content .instructors div a:visited, #page_lesson_piano .content .instructors div a:link, #page_lesson_piano .content .instructors div a:hover, #page_lesson_piano .content .instructors div a:active, #page_lesson_piano .content .instructors div .specialty, #page_lesson_strings .content .instructors div a:visited, #page_lesson_strings .content .instructors div a:link, #page_lesson_strings .content .instructors div a:hover, #page_lesson_strings .content .instructors div a:active, #page_lesson_strings .content .instructors div .specialty, #page_lesson_drum .content .instructors div a:visited, #page_lesson_drum .content .instructors div a:link, #page_lesson_drum .content .instructors div a:hover, #page_lesson_drum .content .instructors div a:active, #page_lesson_drum .content .instructors div .specialty, #page_lesson_guitar .content .instructors div a:visited, #page_lesson_guitar .content .instructors div a:link, #page_lesson_guitar .content .instructors div a:hover, #page_lesson_guitar .content .instructors div a:active, #page_lesson_guitar .content .instructors div .specialty,
+#page_lesson_voice .content .instructors div a:visited,
+#page_lesson_voice .content .instructors div a:link,
+#page_lesson_voice .content .instructors div a:hover,
+#page_lesson_voice .content .instructors div a:active,
+#page_lesson_voice .content .instructors div .specialty, #page_lesson_doublebass .content .instructors div a:visited, #page_lesson_doublebass .content .instructors div a:link, #page_lesson_doublebass .content .instructors div a:hover, #page_lesson_doublebass .content .instructors div a:active, #page_lesson_doublebass .content .instructors div .specialty, #page_suzuki .content .instructors div a:visited, #page_suzuki .content .instructors div a:link, #page_suzuki .content .instructors div a:hover, #page_suzuki .content .instructors div a:active, #page_suzuki .content .instructors div .specialty, #page_lesson_piano .content .button a, #page_lesson_strings .content .button a, #page_lesson_drum .content .button a, #page_lesson_guitar .content .button a,
+#page_lesson_voice .content .button a, #page_lesson_doublebass .content .button a, #page_suzuki .content .button a {
+  text-align: center; }
+
+.align-left {
+  text-align: left; }
+
+.align-right {
+  text-align: right; }
+
+.align-justify {
+  text-align: justify; }
+
+.margin-lr, main .carousel, main .line, main .fav-brands div {
+  margin: 0 7.1875rem; }
+
+.margin-l {
+  margin-left: 7.1875rem; }
+
+.margin-r {
+  margin-right: 7.1875rem; }
+
+.padding-r {
+  padding-right: 7.1875rem; }
+
+.padding-lr {
+  padding: 0 7.1875rem; }
+
+.center, .content-width, #page_repairs-resto h1, #page_repairs-resto h2, #page_repairs-resto p, .content, #page_lesson_piano .content .music-lessons > div, #page_lesson_strings .content .music-lessons > div, #page_lesson_drum .content .music-lessons > div, #page_lesson_guitar
+.content .music-lessons > div, #page_lesson_voice .content .music-lessons > div, #page_lesson_doublebass .content .music-lessons > div, #page_suzuki .content .music-lessons > div, #page_lesson_piano .content .music-lessons > div div a:visited img, #page_lesson_piano .content .music-lessons > div div a:link img, #page_lesson_piano .content .music-lessons > div div a:hover img, #page_lesson_piano .content .music-lessons > div div a:active img, #page_lesson_strings .content .music-lessons > div div a:visited img, #page_lesson_strings .content .music-lessons > div div a:link img, #page_lesson_strings .content .music-lessons > div div a:hover img, #page_lesson_strings .content .music-lessons > div div a:active img, #page_lesson_drum .content .music-lessons > div div a:visited img, #page_lesson_drum .content .music-lessons > div div a:link img, #page_lesson_drum .content .music-lessons > div div a:hover img, #page_lesson_drum .content .music-lessons > div div a:active img, #page_lesson_guitar
+.content .music-lessons > div div a:visited img, #page_lesson_guitar
+.content .music-lessons > div div a:link img, #page_lesson_guitar
+.content .music-lessons > div div a:hover img, #page_lesson_guitar
+.content .music-lessons > div div a:active img, #page_lesson_voice .content .music-lessons > div div a:visited img, #page_lesson_voice .content .music-lessons > div div a:link img, #page_lesson_voice .content .music-lessons > div div a:hover img, #page_lesson_voice .content .music-lessons > div div a:active img, #page_lesson_doublebass .content .music-lessons > div div a:visited img, #page_lesson_doublebass .content .music-lessons > div div a:link img, #page_lesson_doublebass .content .music-lessons > div div a:hover img, #page_lesson_doublebass .content .music-lessons > div div a:active img, #page_suzuki .content .music-lessons > div div a:visited img, #page_suzuki .content .music-lessons > div div a:link img, #page_suzuki .content .music-lessons > div div a:hover img, #page_suzuki .content .music-lessons > div div a:active img, #page_lesson_piano h1, #page_lesson_strings h1, #page_lesson_drum h1, #page_lesson_guitar h1,
+#page_lesson_voice h1, #page_lesson_doublebass h1, #page_suzuki h1, #page_lesson_piano .content .instructors, #page_lesson_strings .content .instructors, #page_lesson_drum .content .instructors, #page_lesson_guitar .content .instructors,
+#page_lesson_voice .content .instructors, #page_lesson_doublebass .content .instructors, #page_suzuki .content .instructors, #page_lesson_piano .content .instructors div a:visited img, #page_lesson_piano .content .instructors div a:link img, #page_lesson_piano .content .instructors div a:hover img, #page_lesson_piano .content .instructors div a:active img, #page_lesson_piano .content .instructors div .specialty img, #page_lesson_strings .content .instructors div a:visited img, #page_lesson_strings .content .instructors div a:link img, #page_lesson_strings .content .instructors div a:hover img, #page_lesson_strings .content .instructors div a:active img, #page_lesson_strings .content .instructors div .specialty img, #page_lesson_drum .content .instructors div a:visited img, #page_lesson_drum .content .instructors div a:link img, #page_lesson_drum .content .instructors div a:hover img, #page_lesson_drum .content .instructors div a:active img, #page_lesson_drum .content .instructors div .specialty img, #page_lesson_guitar .content .instructors div a:visited img, #page_lesson_guitar .content .instructors div a:link img, #page_lesson_guitar .content .instructors div a:hover img, #page_lesson_guitar .content .instructors div a:active img, #page_lesson_guitar .content .instructors div .specialty img,
+#page_lesson_voice .content .instructors div a:visited img,
+#page_lesson_voice .content .instructors div a:link img,
+#page_lesson_voice .content .instructors div a:hover img,
+#page_lesson_voice .content .instructors div a:active img,
+#page_lesson_voice .content .instructors div .specialty img, #page_lesson_doublebass .content .instructors div a:visited img, #page_lesson_doublebass .content .instructors div a:link img, #page_lesson_doublebass .content .instructors div a:hover img, #page_lesson_doublebass .content .instructors div a:active img, #page_lesson_doublebass .content .instructors div .specialty img, #page_suzuki .content .instructors div a:visited img, #page_suzuki .content .instructors div a:link img, #page_suzuki .content .instructors div a:hover img, #page_suzuki .content .instructors div a:active img, #page_suzuki .content .instructors div .specialty img, #page_lesson_piano .content .button, #page_lesson_strings .content .button, #page_lesson_drum .content .button, #page_lesson_guitar .content .button,
+#page_lesson_voice .content .button, #page_lesson_doublebass .content .button, #page_suzuki .content .button {
+  margin: 0 auto; }
+
+.margin-wrapper, main .content {
+  margin: 1.875rem; }
+
+.padding-wrapper, #page_contact #form_contact {
+  padding: 1.875rem; }
+
+.red {
+  color: #BE1F20; }
+
+.black {
+  color: black; }
+
+html {
+  box-sizing: border-box;
+  -webkit-text-size-adjust: none;
+  width: 100%; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 100%;
+  overflow: visible; }
+
+/*#nav-secondary { 
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+}*/
+a:link, a:visited, a:active, a:hover {
+  text-decoration: none; }
+
+input, textarea {
+  border: 1px solid #EAEAEA; }
+
+input {
+  float: left;
+  height: 1.875rem;
+  padding-left: 0.625rem; }
+
+/*.button {
+    display: table;
+    height: $button-height;
+    font-family: Muli;
+    text-decoration: none;
+    a:link, a:visited, a:active, a:hover {
+        display: table-cell;
+        height: 100%;
+        text-align: center;
+        vertical-align: middle;
+    }
+}*/
+.deco-border-tb, .page_not-home h2, #page_repairs-resto h1, #page_repairs-resto h2, #nav_rental .title, #page_lesson_piano h2.fancy, #page_lesson_strings h2.fancy, #page_lesson_drum h2.fancy, #page_lesson_guitar
+h2.fancy, #page_lesson_voice h2.fancy, #page_lesson_doublebass h2.fancy, #page_suzuki h2.fancy, #page_lesson_piano h1, #page_lesson_strings h1, #page_lesson_drum h1, #page_lesson_guitar h1,
+#page_lesson_voice h1, #page_lesson_doublebass h1, #page_suzuki h1 {
+  border-bottom: 1px solid #EAEAEA;
+  border-top: 1px solid #EAEAEA;
+  padding: 0.5rem 0; }
+
+/*header {
+    background-color: white;
+    display: block;
+    .logo {
+        img {
+        display: inline-block;
+        float: left;
+        height: auto;
+        margin-right: rem-calc(45);
+        max-width: rem-calc(210);
+        padding-bottom: rem-calc(20);
+        padding-left:rem-calc(18);
+        }
+    }
+
+    .search {
+        .button {
+            a:link, a:visited, a:hover, a:active {
+                background-color: $red;
+                color: white;
+                font-family: icons;
+                font-size: rem-calc(22);
+            }
+        }
+    }
+}*/
+h1, h2, p, section, section > *, table, ul, > .wrap {
+  margin-bottom: 1.5625rem;
+  margin-top: 1.5625rem; }
+
+#list_rental-policy {
+  list-style: none;
+  margin-left: 0.75rem; }
+  #list_rental-policy li:before {
+    content: "- "; }
+
+.slideshow {
+  clear: both;
+  padding: 0; }
+  .slideshow div img {
+    width: 100%; }
+
+/* Slider */
+.slick-loading .slick-list {
+  background: #fff slick-image-url("ajax-loader.gif") center center no-repeat; }
+
+/* Arrows */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  line-height: 0;
+  font-size: 0;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 50%;
+  margin-top: -10px;
+  padding: 0;
+  border: none;
+  outline: none; }
+  .slick-prev:hover, .slick-prev:focus,
+  .slick-next:hover,
+  .slick-next:focus {
+    outline: none;
+    background: transparent;
+    color: transparent; }
+    .slick-prev:hover:before, .slick-prev:focus:before,
+    .slick-next:hover:before,
+    .slick-next:focus:before {
+      opacity: 0.5; }
+  .slick-prev.slick-disabled:before,
+  .slick-next.slick-disabled:before {
+    opacity: 1; }
+
+.slick-prev:before, .slick-next:before {
+  font-family: "Icons";
+  font-size: 30px;
+  line-height: 1;
+  color: black;
+  opacity: .25;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  z-index: 1000; }
+
+.slick-prev {
+  left: 0; }
+  @media screen and (min-width: 34em) {
+    .slick-prev {
+      left: 15px; } }
+  [dir="rtl"] .slick-prev {
+    left: auto;
+    right: -25px; }
+  .slick-prev:before {
+    content: "i"; }
+    [dir="rtl"] .slick-prev:before {
+      content: "j"; }
+
+.slick-next {
+  right: 10px; }
+  @media screen and (min-width: 34em) {
+    .slick-next {
+      right: 25px; } }
+  [dir="rtl"] .slick-next {
+    left: -25px;
+    right: auto; }
+  .slick-next:before {
+    content: "j"; }
+    [dir="rtl"] .slick-next:before {
+      content: "i"; }
+
+/* Dots */
+.slick-slider {
+  margin-bottom: 2.5rem; }
+
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  width: 100%; }
+  @media screen and (min-width: 34em) {
+    .slick-dots {
+      bottom: -50px; } }
+  .slick-dots li {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer; }
+    .slick-dots li button {
+      border: 0;
+      background: transparent;
+      display: block;
+      height: 20px;
+      width: 20px;
+      outline: none;
+      line-height: 0;
+      font-size: 0;
+      color: transparent;
+      padding: 5px;
+      cursor: pointer; }
+      .slick-dots li button:hover, .slick-dots li button:focus {
+        outline: none; }
+        .slick-dots li button:hover:before, .slick-dots li button:focus:before {
+          opacity: 1; }
+      .slick-dots li button:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "u";
+        width: 20px;
+        height: 20px;
+        font-family: "Icons";
+        font-size: 1.75rem;
+        line-height: 20px;
+        text-align: center;
+        color: #ACACAC;
+        opacity: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale; }
+        @media screen and (min-width: 34em) {
+          .slick-dots li button:before {
+            font-size: 2.625rem; } }
+    .slick-dots li.slick-active button:before {
+      color: #BE1F20;
+      opacity: 1; }
+
+/********************************************
+
+Theme: Allegro Music Center v1
+Programmer: Jasmine English (contact@jasmineenglish.com)
+Designer: Alondra Milanes (alondra@allegromusiccenter.com)
+
+*********************************************/
+/*----------------------------------------------------------------------------*/
+/* UTILITY CLASSES -----------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+.show {
+  display: block !important; }
+
+.hide {
+  display: none !important; }
+
+.invisible {
+  visibility: hidden; }
+
+.float-l {
+  float: left; }
+
+.float-r {
+  float: right; }
+
+.clear-r {
+  clear: right; }
+
+.clear-l {
+  clear: left; }
+
+.align-center, #page_lesson_piano .content .music-lessons > div div a:visited, #page_lesson_piano .content .music-lessons > div div a:link, #page_lesson_piano .content .music-lessons > div div a:hover, #page_lesson_piano .content .music-lessons > div div a:active, #page_lesson_strings .content .music-lessons > div div a:visited, #page_lesson_strings .content .music-lessons > div div a:link, #page_lesson_strings .content .music-lessons > div div a:hover, #page_lesson_strings .content .music-lessons > div div a:active, #page_lesson_drum .content .music-lessons > div div a:visited, #page_lesson_drum .content .music-lessons > div div a:link, #page_lesson_drum .content .music-lessons > div div a:hover, #page_lesson_drum .content .music-lessons > div div a:active, #page_lesson_guitar
+.content .music-lessons > div div a:visited, #page_lesson_guitar
+.content .music-lessons > div div a:link, #page_lesson_guitar
+.content .music-lessons > div div a:hover, #page_lesson_guitar
+.content .music-lessons > div div a:active, #page_lesson_voice .content .music-lessons > div div a:visited, #page_lesson_voice .content .music-lessons > div div a:link, #page_lesson_voice .content .music-lessons > div div a:hover, #page_lesson_voice .content .music-lessons > div div a:active, #page_lesson_doublebass .content .music-lessons > div div a:visited, #page_lesson_doublebass .content .music-lessons > div div a:link, #page_lesson_doublebass .content .music-lessons > div div a:hover, #page_lesson_doublebass .content .music-lessons > div div a:active, #page_suzuki .content .music-lessons > div div a:visited, #page_suzuki .content .music-lessons > div div a:link, #page_suzuki .content .music-lessons > div div a:hover, #page_suzuki .content .music-lessons > div div a:active, #page_lesson_piano h1, #page_lesson_strings h1, #page_lesson_drum h1, #page_lesson_guitar h1,
+#page_lesson_voice h1, #page_lesson_doublebass h1, #page_suzuki h1, #page_lesson_piano .content .instructors div a:visited, #page_lesson_piano .content .instructors div a:link, #page_lesson_piano .content .instructors div a:hover, #page_lesson_piano .content .instructors div a:active, #page_lesson_piano .content .instructors div .specialty, #page_lesson_strings .content .instructors div a:visited, #page_lesson_strings .content .instructors div a:link, #page_lesson_strings .content .instructors div a:hover, #page_lesson_strings .content .instructors div a:active, #page_lesson_strings .content .instructors div .specialty, #page_lesson_drum .content .instructors div a:visited, #page_lesson_drum .content .instructors div a:link, #page_lesson_drum .content .instructors div a:hover, #page_lesson_drum .content .instructors div a:active, #page_lesson_drum .content .instructors div .specialty, #page_lesson_guitar .content .instructors div a:visited, #page_lesson_guitar .content .instructors div a:link, #page_lesson_guitar .content .instructors div a:hover, #page_lesson_guitar .content .instructors div a:active, #page_lesson_guitar .content .instructors div .specialty,
+#page_lesson_voice .content .instructors div a:visited,
+#page_lesson_voice .content .instructors div a:link,
+#page_lesson_voice .content .instructors div a:hover,
+#page_lesson_voice .content .instructors div a:active,
+#page_lesson_voice .content .instructors div .specialty, #page_lesson_doublebass .content .instructors div a:visited, #page_lesson_doublebass .content .instructors div a:link, #page_lesson_doublebass .content .instructors div a:hover, #page_lesson_doublebass .content .instructors div a:active, #page_lesson_doublebass .content .instructors div .specialty, #page_suzuki .content .instructors div a:visited, #page_suzuki .content .instructors div a:link, #page_suzuki .content .instructors div a:hover, #page_suzuki .content .instructors div a:active, #page_suzuki .content .instructors div .specialty, #page_lesson_piano .content .button a, #page_lesson_strings .content .button a, #page_lesson_drum .content .button a, #page_lesson_guitar .content .button a,
+#page_lesson_voice .content .button a, #page_lesson_doublebass .content .button a, #page_suzuki .content .button a {
+  text-align: center; }
+
+.align-left {
+  text-align: left; }
+
+.align-right {
+  text-align: right; }
+
+.align-justify {
+  text-align: justify; }
+
+.margin-lr, main .carousel, main .line, main .fav-brands div {
+  margin: 0 7.1875rem; }
+
+.margin-l {
+  margin-left: 7.1875rem; }
+
+.margin-r {
+  margin-right: 7.1875rem; }
+
+.padding-r {
+  padding-right: 7.1875rem; }
+
+.padding-lr {
+  padding: 0 7.1875rem; }
+
+.center, .content-width, #page_repairs-resto h1, #page_repairs-resto h2, #page_repairs-resto p, .content, #page_lesson_piano .content .music-lessons > div, #page_lesson_strings .content .music-lessons > div, #page_lesson_drum .content .music-lessons > div, #page_lesson_guitar
+.content .music-lessons > div, #page_lesson_voice .content .music-lessons > div, #page_lesson_doublebass .content .music-lessons > div, #page_suzuki .content .music-lessons > div, #page_lesson_piano .content .music-lessons > div div a:visited img, #page_lesson_piano .content .music-lessons > div div a:link img, #page_lesson_piano .content .music-lessons > div div a:hover img, #page_lesson_piano .content .music-lessons > div div a:active img, #page_lesson_strings .content .music-lessons > div div a:visited img, #page_lesson_strings .content .music-lessons > div div a:link img, #page_lesson_strings .content .music-lessons > div div a:hover img, #page_lesson_strings .content .music-lessons > div div a:active img, #page_lesson_drum .content .music-lessons > div div a:visited img, #page_lesson_drum .content .music-lessons > div div a:link img, #page_lesson_drum .content .music-lessons > div div a:hover img, #page_lesson_drum .content .music-lessons > div div a:active img, #page_lesson_guitar
+.content .music-lessons > div div a:visited img, #page_lesson_guitar
+.content .music-lessons > div div a:link img, #page_lesson_guitar
+.content .music-lessons > div div a:hover img, #page_lesson_guitar
+.content .music-lessons > div div a:active img, #page_lesson_voice .content .music-lessons > div div a:visited img, #page_lesson_voice .content .music-lessons > div div a:link img, #page_lesson_voice .content .music-lessons > div div a:hover img, #page_lesson_voice .content .music-lessons > div div a:active img, #page_lesson_doublebass .content .music-lessons > div div a:visited img, #page_lesson_doublebass .content .music-lessons > div div a:link img, #page_lesson_doublebass .content .music-lessons > div div a:hover img, #page_lesson_doublebass .content .music-lessons > div div a:active img, #page_suzuki .content .music-lessons > div div a:visited img, #page_suzuki .content .music-lessons > div div a:link img, #page_suzuki .content .music-lessons > div div a:hover img, #page_suzuki .content .music-lessons > div div a:active img, #page_lesson_piano h1, #page_lesson_strings h1, #page_lesson_drum h1, #page_lesson_guitar h1,
+#page_lesson_voice h1, #page_lesson_doublebass h1, #page_suzuki h1, #page_lesson_piano .content .instructors, #page_lesson_strings .content .instructors, #page_lesson_drum .content .instructors, #page_lesson_guitar .content .instructors,
+#page_lesson_voice .content .instructors, #page_lesson_doublebass .content .instructors, #page_suzuki .content .instructors, #page_lesson_piano .content .instructors div a:visited img, #page_lesson_piano .content .instructors div a:link img, #page_lesson_piano .content .instructors div a:hover img, #page_lesson_piano .content .instructors div a:active img, #page_lesson_piano .content .instructors div .specialty img, #page_lesson_strings .content .instructors div a:visited img, #page_lesson_strings .content .instructors div a:link img, #page_lesson_strings .content .instructors div a:hover img, #page_lesson_strings .content .instructors div a:active img, #page_lesson_strings .content .instructors div .specialty img, #page_lesson_drum .content .instructors div a:visited img, #page_lesson_drum .content .instructors div a:link img, #page_lesson_drum .content .instructors div a:hover img, #page_lesson_drum .content .instructors div a:active img, #page_lesson_drum .content .instructors div .specialty img, #page_lesson_guitar .content .instructors div a:visited img, #page_lesson_guitar .content .instructors div a:link img, #page_lesson_guitar .content .instructors div a:hover img, #page_lesson_guitar .content .instructors div a:active img, #page_lesson_guitar .content .instructors div .specialty img,
+#page_lesson_voice .content .instructors div a:visited img,
+#page_lesson_voice .content .instructors div a:link img,
+#page_lesson_voice .content .instructors div a:hover img,
+#page_lesson_voice .content .instructors div a:active img,
+#page_lesson_voice .content .instructors div .specialty img, #page_lesson_doublebass .content .instructors div a:visited img, #page_lesson_doublebass .content .instructors div a:link img, #page_lesson_doublebass .content .instructors div a:hover img, #page_lesson_doublebass .content .instructors div a:active img, #page_lesson_doublebass .content .instructors div .specialty img, #page_suzuki .content .instructors div a:visited img, #page_suzuki .content .instructors div a:link img, #page_suzuki .content .instructors div a:hover img, #page_suzuki .content .instructors div a:active img, #page_suzuki .content .instructors div .specialty img, #page_lesson_piano .content .button, #page_lesson_strings .content .button, #page_lesson_drum .content .button, #page_lesson_guitar .content .button,
+#page_lesson_voice .content .button, #page_lesson_doublebass .content .button, #page_suzuki .content .button {
+  margin: 0 auto; }
+
+.margin-wrapper, main .content {
+  margin: 1.875rem; }
+
+.padding-wrapper, #page_contact #form_contact {
+  padding: 1.875rem; }
+
+.red {
+  color: #BE1F20; }
+
+.black {
+  color: black; }
+
+html {
+  box-sizing: border-box;
+  -webkit-text-size-adjust: none;
+  width: 100%; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 100%;
+  overflow: visible; }
+
+/*#nav-secondary { 
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+}*/
+a:link, a:visited, a:active, a:hover {
+  text-decoration: none; }
+
+input, textarea {
+  border: 1px solid #EAEAEA; }
+
+input {
+  float: left;
+  height: 1.875rem;
+  padding-left: 0.625rem; }
+
+/*.button {
+    display: table;
+    height: $button-height;
+    font-family: Muli;
+    text-decoration: none;
+    a:link, a:visited, a:active, a:hover {
+        display: table-cell;
+        height: 100%;
+        text-align: center;
+        vertical-align: middle;
+    }
+}*/
+.deco-border-tb, .page_not-home h2, #page_repairs-resto h1, #page_repairs-resto h2, #nav_rental .title, #page_lesson_piano h2.fancy, #page_lesson_strings h2.fancy, #page_lesson_drum h2.fancy, #page_lesson_guitar
+h2.fancy, #page_lesson_voice h2.fancy, #page_lesson_doublebass h2.fancy, #page_suzuki h2.fancy, #page_lesson_piano h1, #page_lesson_strings h1, #page_lesson_drum h1, #page_lesson_guitar h1,
+#page_lesson_voice h1, #page_lesson_doublebass h1, #page_suzuki h1 {
+  border-bottom: 1px solid #EAEAEA;
+  border-top: 1px solid #EAEAEA;
+  padding: 0.5rem 0; }
+
+/*header {
+    background-color: white;
+    display: block;
+    .logo {
+        img {
+        display: inline-block;
+        float: left;
+        height: auto;
+        margin-right: rem-calc(45);
+        max-width: rem-calc(210);
+        padding-bottom: rem-calc(20);
+        padding-left:rem-calc(18);
+        }
+    }
+
+    .search {
+        .button {
+            a:link, a:visited, a:hover, a:active {
+                background-color: $red;
+                color: white;
+                font-family: icons;
+                font-size: rem-calc(22);
+            }
+        }
+    }
+}*/
+h1, h2, p, section, section > *, table, ul, > .wrap {
+  margin-bottom: 1.5625rem;
+  margin-top: 1.5625rem; }
+
+#list_rental-policy {
+  list-style: none;
+  margin-left: 0.75rem; }
+  #list_rental-policy li:before {
+    content: "- "; }
+
+.slideshow {
+  clear: both;
+  padding: 0; }
+  .slideshow div img {
+    width: 100%; }
+
+/* Slider */
+.slick-loading .slick-list {
+  background: #fff slick-image-url("ajax-loader.gif") center center no-repeat; }
+
+/* Arrows */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  line-height: 0;
+  font-size: 0;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 50%;
+  margin-top: -10px;
+  padding: 0;
+  border: none;
+  outline: none; }
+  .slick-prev:hover, .slick-prev:focus,
+  .slick-next:hover,
+  .slick-next:focus {
+    outline: none;
+    background: transparent;
+    color: transparent; }
+    .slick-prev:hover:before, .slick-prev:focus:before,
+    .slick-next:hover:before,
+    .slick-next:focus:before {
+      opacity: 0.5; }
+  .slick-prev.slick-disabled:before,
+  .slick-next.slick-disabled:before {
+    opacity: 1; }
+
+.slick-prev:before, .slick-next:before {
+  font-family: "Icons";
+  font-size: 30px;
+  line-height: 1;
+  color: black;
+  opacity: .25;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  z-index: 1000; }
+
+.slick-prev {
+  left: 0; }
+  @media screen and (min-width: 34em) {
+    .slick-prev {
+      left: 15px; } }
+  [dir="rtl"] .slick-prev {
+    left: auto;
+    right: -25px; }
+  .slick-prev:before {
+    content: "i"; }
+    [dir="rtl"] .slick-prev:before {
+      content: "j"; }
+
+.slick-next {
+  right: 10px; }
+  @media screen and (min-width: 34em) {
+    .slick-next {
+      right: 25px; } }
+  [dir="rtl"] .slick-next {
+    left: -25px;
+    right: auto; }
+  .slick-next:before {
+    content: "j"; }
+    [dir="rtl"] .slick-next:before {
+      content: "i"; }
+
+/* Dots */
+.slick-slider {
+  margin-bottom: 2.5rem; }
+
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  width: 100%; }
+  @media screen and (min-width: 34em) {
+    .slick-dots {
+      bottom: -50px; } }
+  .slick-dots li {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer; }
+    .slick-dots li button {
+      border: 0;
+      background: transparent;
+      display: block;
+      height: 20px;
+      width: 20px;
+      outline: none;
+      line-height: 0;
+      font-size: 0;
+      color: transparent;
+      padding: 5px;
+      cursor: pointer; }
+      .slick-dots li button:hover, .slick-dots li button:focus {
+        outline: none; }
+        .slick-dots li button:hover:before, .slick-dots li button:focus:before {
+          opacity: 1; }
+      .slick-dots li button:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "u";
+        width: 20px;
+        height: 20px;
+        font-family: "Icons";
+        font-size: 1.75rem;
+        line-height: 20px;
+        text-align: center;
+        color: #ACACAC;
+        opacity: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale; }
+        @media screen and (min-width: 34em) {
+          .slick-dots li button:before {
+            font-size: 2.625rem; } }
+    .slick-dots li.slick-active button:before {
+      color: #BE1F20;
+      opacity: 1; }
+
+.large {
+  display: none !important; }
+
+#overlay-small {
+  background-color: black;
+  display: none;
+  height: 100vh;
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; }
+
+ul {
+  list-style: none; }
+
+.inverted-colors {
+  background-color: #ACACAC !important;
+  border: 0;
+  color: #EDEDED !important; }
+
+.icon-menu {
+  font-size: 1.875rem;
+  line-height: 0; }
+
+.visible {
+  visibility: visible !important; }
+
+.hidden {
+  visibility: hidden !important; }
+
+.display-none {
+  display: none !important; }
+
+.display-block {
+  display: block !important; }
+
+.display-inline_block {
+  display: inline-block !important; }
+
+.display-inline {
+  display: inline !important; }
+
+html, body {
+  min-height: 100%; }
+
+.button {
+  height: 1.875rem;
+  display: table; }
+
+.button > * {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle; }
+
+.button, .nav-level-2, .nav-level-2 .nav-item {
+  /*    -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;*/ }
+
+.button, header, header .right_small, header .left_small, header .search, header .search .button, #nav-ecomm, #nav-ecomm .button,
+#nav-level-1, .nav-level-2, .nav-level-2 .nav-item {
+  /*    display: -webkit-box;       OLD - iOS 6-, Safari 3.1-6           OLD - Firefox 19- (buggy but mostly works) 
+      display: -ms-flexbox;       TWEENER - IE 10 
+      display: -webkit-flex;      NEW - Chrome 
+      display: flex;              NEW, Spec - Opera 12.1, Firefox 20+ */ }
+
+header {
+  /*    -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;*/
+  width: 100%; }
+
+#page_index {
+  padding-top: 8rem; }
+
+header {
+  background-color: white;
+  height: 8rem;
+  /*    -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;*/
+  position: fixed;
+  width: 100%;
+  z-index: 2000; }
+
+header > .container {
+  text-align: center; }
+
+header .logo, #nav-ecomm {
+  display: inline-block; }
+
+header .logo {
+  width: 49.33333%; }
+
+header .logo img {
+  padding-top: 1.25rem;
+  width: 7.9375rem;
+  height: auto; }
+
+#nav-ecomm {
+  /*    -webkit-box-ordinal-group: 2;
+      -webkit-order: 1;
+      -ms-flex-order: 1;
+      order: 1;*/
+  white-space: nowrap;
+  width: 50.66667%;
+  vertical-align: top;
+  /*    -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;*/ }
+
+#nav-ecomm .button {
+  border-right: #EAEAEA solid 1px;
+  display: inline-block;
+  height: 2.1875rem;
+  margin-top: 1.5625rem;
+  padding: 0 0.75rem;
+  min-width: 3.75rem;
+  max-width: 4.6875rem;
+  vertical-align: bottom;
+  /*    -webkit-flex-flow: column wrap;
+      -ms-flex-flow: column wrap;
+      flex-flow: column wrap;
+      -webkit-align-content: flex-end;
+      -ms-flex-line-pack: end;
+      align-content: flex-end;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;*/ }
+
+#nav-ecomm a, #nav-ecomm span {
+  color: #8a8688;
+  font-size: 0.5rem;
+  text-transform: uppercase;
+  cursor: pointer; }
+
+#nav-ecomm .button span, #nav-ecomm img, #nav-ecomm i {
+  display: block;
+  margin: 0 auto; }
+
+#nav-ecomm img, #nav-ecomm i {
+  margin-bottom: 0.4375rem; }
+
+#nav-open img {
+  margin-bottom: 0.3125rem; }
+
+#nav-ecomm a:last-of-type {
+  border: 0; }
+
+header .search {
+  display: inline-block;
+  padding: 1.25rem 1.5625rem 0 1.5625rem;
+  text-align: center;
+  width: 100%;
+  /*    -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;*/ }
+
+header .search input {
+  display: inline-block;
+  /*    -webkit-box-flex: 6;
+      -webkit-flex: 6;
+      -ms-flex: 6;
+      flex: 6;*/
+  width: 85.07463%; }
+
+header .search .button {
+  background-color: #BE1F20;
+  display: inline-block;
+  /*    -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1;*/
+  width: 14.92537%; }
+
+header .search .button > * {
+  display: inline-block;
+  transform: translateY(50%);
+  -moz-transform: translateY(25%);
+  margin: 0 auto; }
+
+#nav-primary {
+  background-color: #ACACAC;
+  box-shadow: 2px 0 5px 0 black;
+  height: 100vh;
+  overflow: scroll;
+  padding-bottom: 3rem;
+  position: fixed;
+  top: 0;
+  left: -18.75rem;
+  text-align: left;
+  width: 15.625rem;
+  z-index: 9999; }
+  #nav-primary #nav-close {
+    color: #EDEDED;
+    cursor: pointer;
+    font-size: 0.5rem;
+    text-transform: uppercase;
+    padding: 1.25rem 0.9375rem 1.5625rem 11.5625rem;
+    width: 100%; }
+    #nav-primary #nav-close img {
+      display: block;
+      margin-bottom: 0.625rem; }
+  #nav-primary #nav-level-1 {
+    background-color: #ACACAC;
+    border: 0;
+    display: block; }
+    #nav-primary #nav-level-1 a, #nav-primary #nav-level-1 span {
+      background-color: #EDEDED;
+      border-bottom: #ACACAC 2px solid;
+      color: #ACACAC;
+      cursor: pointer;
+      display: block;
+      font-family: "Muli";
+      font-size: 1.125rem;
+      letter-spacing: -1px;
+      padding: 0.9375rem 0;
+      padding-left: 1.25rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 100%;
+      text-transform: uppercase; }
+      #nav-primary #nav-level-1 a .icon-chevron-right, #nav-primary #nav-level-1 a .icon-chevron-down, #nav-primary #nav-level-1 span .icon-chevron-right, #nav-primary #nav-level-1 span .icon-chevron-down {
+        padding-right: 0.9375rem;
+        position: absolute;
+        right: 0; }
+      #nav-primary #nav-level-1 a .icon-chevron-down, #nav-primary #nav-level-1 span .icon-chevron-down {
+        opacity: 0; }
+    #nav-primary #nav-level-1 .nav-level-2 {
+      display: none; }
+      #nav-primary #nav-level-1 .nav-level-2 li {
+        display: block; }
+        #nav-primary #nav-level-1 .nav-level-2 li a, #nav-primary #nav-level-1 .nav-level-2 li span {
+          font-family: "Muli";
+          font-size: 1.1875rem;
+          letter-spacing: 0;
+          position: relative;
+          text-transform: none;
+          width: 100%; }
+          #nav-primary #nav-level-1 .nav-level-2 li a .icon-chevron-down, #nav-primary #nav-level-1 .nav-level-2 li a .icon-chevron-right, #nav-primary #nav-level-1 .nav-level-2 li span .icon-chevron-down, #nav-primary #nav-level-1 .nav-level-2 li span .icon-chevron-right {
+            padding-right: 0.9375rem;
+            position: absolute;
+            right: 0; }
+          #nav-primary #nav-level-1 .nav-level-2 li a .icon-chevron-down, #nav-primary #nav-level-1 .nav-level-2 li span .icon-chevron-down {
+            opacity: 0; }
+        #nav-primary #nav-level-1 .nav-level-2 li .nav-level-3 {
+          display: none; }
+          #nav-primary #nav-level-1 .nav-level-2 li .nav-level-3 li {
+            display: block; }
+            #nav-primary #nav-level-1 .nav-level-2 li .nav-level-3 li a {
+              background-color: #ACACAC;
+              border-color: #EDEDED;
+              border-width: 1px;
+              color: #EDEDED;
+              padding-left: 2.8125rem; }
+              #nav-primary #nav-level-1 .nav-level-2 li .nav-level-3 li a .icon-chevron-down {
+                opacity: 0; }
+
+#nav-back {
+  background-color: #ACACAC;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-family: Muli;
+  font-size: 0.625rem;
+  padding: 1.25rem 0;
+  padding-left: 1.25rem;
+  text-transform: uppercase;
+  width: 100%; }
+  #nav-back i {
+    display: inline-block;
+    font-size: 1.125rem;
+    vertical-align: middle; }
+
+/*header {
+    display: block;
+    height: rem-calc(128);
+    .logo {
+        display: table;
+        max-width: rem-calc(125);
+        padding-left: 0;
+        text-align: left;
+        vertical-align: middle;
+        width: 36%;
+
+        img {
+            display: table-cell;
+            width: 100%;
+        }
+    }
+}*/
+main {
+  display: block;
+  font-family: Muli;
+  padding-top: 8rem; }
+  main .content p {
+    text-align: justify; }
+  main .content > .button {
+    background-color: #BE1F20;
+    margin: 0 auto; }
+    main .content > .button a {
+      color: white;
+      font-family: 'Open Sans';
+      font-size: 1.225rem;
+      font-weight: 600;
+      height: 3.125rem;
+      padding: 0 1.5rem; }
+  main h1, main h2, main p, main section, main section > *, main table, main ul, main > .wrap {
+    margin-bottom: 1.5625rem;
+    margin-top: 1.5625rem; }
+  main h1, main h2 {
+    color: #BE1F20;
+    font-family: Muli;
+    font-size: 2rem;
+    text-align: center; }
+  main img.banner {
+    max-width: 100%; }
+  main p, main > span, main ul, main ol {
+    color: black;
+    font-family: Muli;
+    font-size: 0.875rem;
+    line-height: 200%; }
+  main ol {
+    list-style-type: decimal;
+    margin-left: inherit; }
+    main ol li {
+      display: list-item;
+      list-style: decimal; }
+  main sup {
+    font-size: 0.4375rem;
+    vertical-align: super; }
+
+.coupon {
+  background-color: #EAEAEA;
+  display: table;
+  margin: 5rem auto;
+  max-width: 75rem;
+  padding: 1.75rem;
+  width: 100%; }
+  .coupon .wrap {
+    border: 1px #BE1F20 dashed;
+    display: table-cell;
+    padding: 1.5rem; }
+    .coupon .wrap div {
+      display: block;
+      vertical-align: top; }
+    .coupon .wrap div:first-of-type {
+      text-align: right;
+      text-transform: uppercase; }
+      .coupon .wrap div:first-of-type h2 {
+        font-size: 1.75rem;
+        line-height: 115%;
+        margin: 0;
+        padding: 0;
+        text-align: left; }
+    .coupon .wrap div:last-of-type {
+      font-family: Muli;
+      font-size: 0.875rem;
+      line-height: 150%;
+      text-align: justify; }
+      .coupon .wrap div:last-of-type ul {
+        margin-top: 1rem; }
+        .coupon .wrap div:last-of-type ul li:before {
+          color: #BE1F20;
+          content: "\002022";
+          padding-right: 0.5rem; }
+
+#page_contact .map {
+  height: 0;
+  margin: 0 auto;
+  max-width: 75rem;
+  max-height: 27.5rem;
+  overflow: hidden;
+  padding-bottom: 36.66667%;
+  position: relative; }
+  #page_contact .map iframe {
+    height: 100%;
+    position: absolute;
+    width: 100%; }
+#page_contact #section_contact {
+  text-align: left; }
+  #page_contact #section_contact .wrap div {
+    display: block;
+    margin-bottom: 1rem;
+    text-align: left;
+    white-space: nowrap; }
+    #page_contact #section_contact .wrap div a:link, #page_contact #section_contact .wrap div a:visited, #page_contact #section_contact .wrap div a:hover, #page_contact #section_contact .wrap div a:active {
+      color: inherit; }
+    #page_contact #section_contact .wrap div img {
+      margin-right: 0.75rem;
+      vertical-align: middle; }
+#page_contact #section_store-hours {
+  border: 3px #EAEAEA solid;
+  text-align: center; }
+#page_contact #form_contact {
+  background-color: #EAEAEA;
+  display: block; }
+  #page_contact #form_contact form {
+    margin: 0; }
+    #page_contact #form_contact form .wrap label, #page_contact #form_contact form .wrap input, #page_contact #form_contact form .wrap textarea {
+      clear: both;
+      display: block;
+      width: 100%; }
+    #page_contact #form_contact form .wrap label {
+      font-family: Muli;
+      font-size: 0.74375rem;
+      padding-top: 0.625rem; }
+    #page_contact #form_contact form .wrap input, #page_contact #form_contact form .wrap textarea {
+      border: 1px solid #ACACAC; }
+    #page_contact #form_contact form .wrap .button, #page_contact #form_contact form .wrap input {
+      height: 2.1875rem; }
+    #page_contact #form_contact form .wrap .button {
+      background-color: #BE1F20;
+      clear: both;
+      margin: 0 auto;
+      margin-top: 0.9375rem;
+      width: 70%; }
+      #page_contact #form_contact form .wrap .button a:link, #page_contact #form_contact form .wrap .button a:visited, #page_contact #form_contact form .wrap .button a:active, #page_contact #form_contact form .wrap .button a:hover {
+        color: white; }
+    #page_contact #form_contact form .wrap:last-of-type textarea {
+      height: 9.375rem;
+      margin-bottom: 1.25rem; }
+
+#nav_rental-types {
+  text-align: center; }
+  #nav_rental-types div {
+    margin-bottom: 2rem;
+    padding-top: 2rem; }
+    #nav_rental-types div h3 {
+      color: #BE1F20;
+      font-size: 1.3125rem;
+      margin-top: 2rem; }
+    #nav_rental-types div span {
+      border-bottom: 2px #EAEAEA solid;
+      color: black;
+      font-size: 0.9625rem;
+      padding: 0 1rem 2rem 1rem; }
+    #nav_rental-types div:first-of-type {
+      padding: 0; }
+    #nav_rental-types div:last-of-type span {
+      border: 0; }
+
+.page_rentals_ h3 {
+  color: black;
+  font-family: Muli;
+  font-size: 1.75rem;
+  text-align: center; }
+.page_rentals_ #list_rental-policy {
+  list-style: none;
+  margin-left: 0.75rem; }
+  .page_rentals_ #list_rental-policy li:before {
+    content: "- "; }
+.page_rentals_ .wrap {
+  overflow: auto;
+  width: 100%; }
+.page_rentals_ .tb_sizing-guide {
+  background-color: #EAEAEA;
+  background-image: -webkit-linear-gradient(left, white, #EAEAEA, white);
+  background-image: linear-gradient(to right, white, #EAEAEA, white);
+  margin-bottom: 0;
+  overflow-x: scroll;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 200%; }
+  .page_rentals_ .tb_sizing-guide thead tr {
+    background-color: white;
+    background-image: white;
+    font-size: 0.6875rem;
+    text-align: center; }
+    .page_rentals_ .tb_sizing-guide thead tr th {
+      border-right: red 1px solid;
+      padding-bottom: 0.625rem; }
+      .page_rentals_ .tb_sizing-guide thead tr th:last-of-type {
+        border-right: none; }
+      .page_rentals_ .tb_sizing-guide thead tr th.border-none {
+        border-right: none; }
+  .page_rentals_ .tb_sizing-guide tbody .sizes-inst td {
+    border-right: red 1px solid;
+    font-size: 1.3125rem;
+    padding-top: 1.25rem;
+    width: 12.5%; }
+    .page_rentals_ .tb_sizing-guide tbody .sizes-inst td:last-of-type, .page_rentals_ .tb_sizing-guide tbody .sizes-inst td.border-short {
+      border-right: none; }
+    .page_rentals_ .tb_sizing-guide tbody .sizes-inst td.border-short span {
+      border-right: red 1px solid;
+      display: block;
+      margin-top: -0.625rem;
+      padding-bottom: 1.375rem;
+      padding-top: 1.25rem; }
+  .page_rentals_ .tb_sizing-guide tbody .sizes-arm td {
+    color: #8a8688;
+    font-size: 0.75rem;
+    padding: 0.625rem 0; }
+    .page_rentals_ .tb_sizing-guide tbody .sizes-arm td span {
+      font-size: 0.875rem; }
+
+#nav_rental {
+  display: table;
+  margin: 0 auto;
+  margin-top: 1rem; }
+  #nav_rental .wrap_img {
+    text-align: center;
+    width: 100%; }
+    #nav_rental .wrap_img img {
+      text-align: center; }
+  #nav_rental .wrap {
+    display: table-header-group;
+    width: 100%; }
+    #nav_rental .wrap div {
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle; }
+    #nav_rental .wrap .prev, #nav_rental .wrap .next {
+      top: 12.5rem; }
+      #nav_rental .wrap .prev i, #nav_rental .wrap .next i {
+        color: #ACACAC;
+        font-size: 1.5rem; }
+    #nav_rental .wrap .prev {
+      position: absolute;
+      left: 5%; }
+    #nav_rental .wrap .next {
+      position: absolute;
+      right: 5%; }
+  #nav_rental .title {
+    display: table-footer-group;
+    width: 100%; }
+    #nav_rental .title h1 {
+      margin-bottom: 0; }
+
+#tb_rental-prices {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  white-space: nowrap; }
+  #tb_rental-prices thead {
+    display: block;
+    float: left; }
+  #tb_rental-prices tbody {
+    display: block;
+    overflow-x: auto; }
+  #tb_rental-prices tr {
+    display: inline-block; }
+  #tb_rental-prices td, #tb_rental-prices th {
+    display: block;
+    margin: 0;
+    height: 3.125rem;
+    padding: 0.9375rem 0.625rem; }
+  #tb_rental-prices tr:nth-child(4n), #tb_rental-prices tr:nth-child(4n-1) {
+    background-color: #F7F7F7; }
+    #tb_rental-prices tr:nth-child(4n) td, #tb_rental-prices tr:nth-child(4n-1) td {
+      border-bottom: 2px white solid; }
+  #tb_rental-prices tr:nth-child(4n-2), #tb_rental-prices tr:nth-child(4n-3) {
+    background-color: white; }
+    #tb_rental-prices tr:nth-child(4n-2) td, #tb_rental-prices tr:nth-child(4n-3) td {
+      border-bottom: 2px #F7F7F7 solid; }
+  #tb_rental-prices th {
+    background-color: #EAEAEA;
+    border-bottom: white 2px solid;
+    color: #BE1F20;
+    font-size: 0.875rem;
+    letter-spacing: 0;
+    text-transform: capitalize; }
+    #tb_rental-prices th span {
+      color: inherit;
+      display: block;
+      font-size: 0.625rem; }
+    #tb_rental-prices th:first-of-type {
+      text-transform: uppercase; }
+    #tb_rental-prices th:last-of-type {
+      border: 0; }
+  #tb_rental-prices td.instrument {
+    background-color: #EAEAEA;
+    overflow: visible;
+    width: 211%; }
+  #tb_rental-prices tr:last-of-type .instrument {
+    width: 100%; }
+
+#page_rentals_guitar #tb_rental-prices {
+  max-width: 25.9375rem; }
+
+#page_repairs-resto ul li {
+  color: #494949;
+  font-family: 'Open Sans';
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center; }
+
+.page_lesson_ img {
+  margin-bottom: 1.5rem; }
+.page_lesson_ .reorder {
+  display: table;
+  width: 100%; }
+  .page_lesson_ .reorder h1 {
+    display: table-footer-group;
+    text-align: center; }
+  .page_lesson_ .reorder img {
+    display: table-header-group;
+    margin-left: auto;
+    margin-right: auto; }
+.page_lesson_ .instructors {
+  text-align: center; }
+  .page_lesson_ .instructors div {
+    margin-bottom: 2rem; }
+    .page_lesson_ .instructors div span {
+      display: block; }
+  .page_lesson_ .instructors a:visited, .page_lesson_ .instructors a:link, .page_lesson_ .instructors a:hover, .page_lesson_ .instructors a:active {
+    color: #BE1F20;
+    font-family: 'Open Sans';
+    font-size: 1.125rem; }
+  .page_lesson_ .instructors img {
+    display: block;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto; }
+
+#page_music-edu .sec_music-lessons {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; }
+  #page_music-edu .sec_music-lessons div {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    width: 50%; }
+    #page_music-edu .sec_music-lessons div a:visited, #page_music-edu .sec_music-lessons div a:link, #page_music-edu .sec_music-lessons div a:hover, #page_music-edu .sec_music-lessons div a:active {
+      color: #BE1F20;
+      font-family: 'Open Sans';
+      font-size: 1.125rem; }
+    #page_music-edu .sec_music-lessons div img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 1.25rem; }
+#page_music-edu .tb_pricing {
+  background-color: white;
+  display: block;
+  font-family: 'Open Sans';
+  text-align: left;
+  white-space: nowrap;
+  width: 100%; }
+  #page_music-edu .tb_pricing caption {
+    background-color: #EAEAEA;
+    display: block;
+    color: #BE1F20;
+    font-size: 1.375rem;
+    padding: 1rem;
+    text-align: center; }
+  #page_music-edu .tb_pricing thead, #page_music-edu .tb_pricing tbody {
+    display: block; }
+    #page_music-edu .tb_pricing thead tr, #page_music-edu .tb_pricing tbody tr {
+      padding-bottom: 1rem; }
+  #page_music-edu .tb_pricing thead {
+    float: left; }
+  #page_music-edu .tb_pricing tbody {
+    overflow-x: auto; }
+    #page_music-edu .tb_pricing tbody tr {
+      display: inline-block; }
+    #page_music-edu .tb_pricing tbody td {
+      border-bottom: 2px solid #F7F7F7; }
+  #page_music-edu .tb_pricing td, #page_music-edu .tb_pricing th {
+    display: block;
+    height: 2.1875rem;
+    line-height: 0;
+    padding: 0.9375rem 1.25rem; }
+  #page_music-edu .tb_pricing th {
+    background-color: #EAEAEA;
+    border-bottom: 2px solid #F7F7F7;
+    color: #BE1F20;
+    font-size: 0.85rem;
+    text-align: right; }
+    #page_music-edu .tb_pricing th:last-of-type {
+      border: none; }
+  #page_music-edu .tb_pricing td.data_duration {
+    background-color: #F7F7F7; }
+#page_music-edu #tb_lessons_individual tr {
+  width: 50%; }
+#page_music-edu #tb_lessons_group tbody .data_duration {
+  text-align: center;
+  width: 386%; }
+#page_music-edu #tb_lessons_group tbody tr:nth-of-type(4) td, #page_music-edu #tb_lessons_group tbody tr:last-of-type td {
+  background-image: -webkit-linear-gradient(left, white, #F7F7F7);
+  background-image: linear-gradient(to right, white, #F7F7F7); }
+
+/* HEADER --------------------------------------------------------------------*/
+/*header {
+    overflow: hidden;
+    padding: rem-calc(20);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    .search {
+        float: left;
+        width: 100%;
+        input {
+            width: 82%;
+        }
+        .button {
+            display: table;
+            width: 18%;
+            a:link, a:visited, a:hover, a:active {
+                display: table-cell;
+                vertical-align: middle;
+                img {
+                    display: block;
+                    margin: 0 auto;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}*/
+/*#nav-secondary {
+    display: table;
+    position: absolute; top: rem-calc(20); right: 7%;
+    vertical-align: middle;
+
+    a:link, a:visited, a:hover, a:active {
+        border-right: 1px $gray-light solid;
+        color: $gray-medium;
+        display: table-cell;
+        font-size: rem-calc(9);
+        letter-spacing: -1px;
+        padding: 0 rem-calc(12);
+        vertical-align: bottom;
+        white-space: nowrap;
+
+        &:first-of-type {
+            padding-left: 0;
+        }
+        &:last-of-type {
+            border-right: 0;
+            padding-right: 0;
+        }
+        img {
+            display: block;
+            margin-bottom: 0.5rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        i {
+            display: block;
+            line-height: 0;
+        }
+
+        .icon-user, .icon-basket {
+            font-size: rem-calc(20);
+            padding-bottom: rem-calc(13);
+        }
+    }
+}*/
+.mq-small-nav {
+  position: fixed;
+  top: 0;
+  left: -18.75rem; }
+
+#page_index {
+  clear: both; }
+  #page_index .carousel {
+    /* USE SLICK ... HAS CENTER FEATURE */
+    clear: both;
+    text-align: center; }
+    #page_index .carousel h2 {
+      color: #ACACAC;
+      font-size: 0.9375rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      margin-bottom: 2.5rem; }
+  #page_index .nav-hot {
+    display: none; }
+  #page_index .fav-brands {
+    display: none; }
+
+footer {
+  background-color: #EAEAEA;
+  display: block;
+  width: 100%; }
+  footer #accepted-cards {
+    background-color: #F7F7F7;
+    color: #ACACAC;
+    font-size: 0.75rem;
+    padding: 1.5rem 0;
+    text-align: center; }
+    footer #accepted-cards img {
+      margin-left: 1rem;
+      vertical-align: middle; }
+  footer .footer-link, footer .fat-footer nav div ul li a:link, footer .fat-footer nav div ul li a:visited, footer .fat-footer nav .address span {
+    color: #8a8688;
+    font-size: 0.75rem; }
+  footer .fat-footer {
+    background-color: #EAEAEA;
+    padding: 1.25rem;
+    text-align: center; }
+    footer .fat-footer .subscribe {
+      display: block;
+      padding-bottom: 1.875rem;
+      width: 100%; }
+      footer .fat-footer .subscribe h2 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: #494949;
+        margin-bottom: 1rem; }
+      footer .fat-footer .subscribe .wrap {
+        display: table;
+        height: 1.875rem;
+        width: 100%; }
+        footer .fat-footer .subscribe .wrap div {
+          display: table-cell;
+          vertical-align: middle; }
+          footer .fat-footer .subscribe .wrap div input {
+            border: 0;
+            width: 100%; }
+        footer .fat-footer .subscribe .wrap .button {
+          background-color: #494949;
+          height: 1.875rem;
+          color: white;
+          display: table-cell;
+          font-size: 0.9rem;
+          height: 1.875rem;
+          text-align: center;
+          vertical-align: middle; }
+    footer .fat-footer nav .social {
+      display: block; }
+      footer .fat-footer nav .social h2 {
+        display: none; }
+      footer .fat-footer nav .social ul {
+        margin-left: 0;
+        margin-bottom: 0.3125rem; }
+        footer .fat-footer nav .social ul li {
+          display: inline; }
+          footer .fat-footer nav .social ul li a:link, footer .fat-footer nav .social ul li a:visited {
+            color: #494949;
+            font-size: 2.25rem;
+            margin-right: 0.3125rem; }
+        footer .fat-footer nav .social ul li:last-child a:link, footer .fat-footer nav .social ul li:last-child a:visited {
+          margin-right: 0; }
+  footer .copyright {
+    background-color: #494949;
+    clear: both;
+    display: block;
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%; }
+    footer .copyright ul, footer .copyright span {
+      color: #8a8688;
+      font-family: Muli;
+      font-size: 0.875rem; }
+    footer .copyright ul {
+      list-style: none; }
+      footer .copyright ul li:first-of-type {
+        border-right-color: inherit;
+        border-right-style: solid;
+        border-right-width: 1px; }
+      footer .copyright ul li {
+        display: inline-block;
+        line-height: 90%;
+        padding: 0;
+        margin: 0; }
+        footer .copyright ul li a:link, footer .copyright ul li a:visited {
+          color: inherit;
+          font-family: inherit;
+          margin: 0 1rem 0 0.75rem;
+          padding: 0; }
+      footer .copyright ul .large {
+        display: none; }
+    footer .copyright span {
+      display: block;
+      font-size: 0.6875rem;
+      margin-top: 0.75rem; }
+
+/********************************************
+
+Theme: Allegro Music Center v1
+Programmer: Jasmine English (contact@jasmineenglish.com)
+Designer: Alondra Milanes (alondra@allegromusiccenter.com)
+
+*********************************************/
+/*----------------------------------------------------------------------------*/
+/* UTILITY CLASSES -----------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+.show {
+  display: block !important; }
+
+.hide {
+  display: none !important; }
+
+.invisible {
+  visibility: hidden; }
+
+.float-l {
+  float: left; }
+
+.float-r {
+  float: right; }
+
+.clear-r {
+  clear: right; }
+
+.clear-l {
+  clear: left; }
+
+.align-center, #page_lesson_piano .content .music-lessons > div div a:visited, #page_lesson_piano .content .music-lessons > div div a:link, #page_lesson_piano .content .music-lessons > div div a:hover, #page_lesson_piano .content .music-lessons > div div a:active, #page_lesson_strings .content .music-lessons > div div a:visited, #page_lesson_strings .content .music-lessons > div div a:link, #page_lesson_strings .content .music-lessons > div div a:hover, #page_lesson_strings .content .music-lessons > div div a:active, #page_lesson_drum .content .music-lessons > div div a:visited, #page_lesson_drum .content .music-lessons > div div a:link, #page_lesson_drum .content .music-lessons > div div a:hover, #page_lesson_drum .content .music-lessons > div div a:active, #page_lesson_guitar
+.content .music-lessons > div div a:visited, #page_lesson_guitar
+.content .music-lessons > div div a:link, #page_lesson_guitar
+.content .music-lessons > div div a:hover, #page_lesson_guitar
+.content .music-lessons > div div a:active, #page_lesson_voice .content .music-lessons > div div a:visited, #page_lesson_voice .content .music-lessons > div div a:link, #page_lesson_voice .content .music-lessons > div div a:hover, #page_lesson_voice .content .music-lessons > div div a:active, #page_lesson_doublebass .content .music-lessons > div div a:visited, #page_lesson_doublebass .content .music-lessons > div div a:link, #page_lesson_doublebass .content .music-lessons > div div a:hover, #page_lesson_doublebass .content .music-lessons > div div a:active, #page_suzuki .content .music-lessons > div div a:visited, #page_suzuki .content .music-lessons > div div a:link, #page_suzuki .content .music-lessons > div div a:hover, #page_suzuki .content .music-lessons > div div a:active, #page_lesson_piano h1, #page_lesson_strings h1, #page_lesson_drum h1, #page_lesson_guitar h1,
+#page_lesson_voice h1, #page_lesson_doublebass h1, #page_suzuki h1, #page_lesson_piano .content .instructors div a:visited, #page_lesson_piano .content .instructors div a:link, #page_lesson_piano .content .instructors div a:hover, #page_lesson_piano .content .instructors div a:active, #page_lesson_piano .content .instructors div .specialty, #page_lesson_strings .content .instructors div a:visited, #page_lesson_strings .content .instructors div a:link, #page_lesson_strings .content .instructors div a:hover, #page_lesson_strings .content .instructors div a:active, #page_lesson_strings .content .instructors div .specialty, #page_lesson_drum .content .instructors div a:visited, #page_lesson_drum .content .instructors div a:link, #page_lesson_drum .content .instructors div a:hover, #page_lesson_drum .content .instructors div a:active, #page_lesson_drum .content .instructors div .specialty, #page_lesson_guitar .content .instructors div a:visited, #page_lesson_guitar .content .instructors div a:link, #page_lesson_guitar .content .instructors div a:hover, #page_lesson_guitar .content .instructors div a:active, #page_lesson_guitar .content .instructors div .specialty,
+#page_lesson_voice .content .instructors div a:visited,
+#page_lesson_voice .content .instructors div a:link,
+#page_lesson_voice .content .instructors div a:hover,
+#page_lesson_voice .content .instructors div a:active,
+#page_lesson_voice .content .instructors div .specialty, #page_lesson_doublebass .content .instructors div a:visited, #page_lesson_doublebass .content .instructors div a:link, #page_lesson_doublebass .content .instructors div a:hover, #page_lesson_doublebass .content .instructors div a:active, #page_lesson_doublebass .content .instructors div .specialty, #page_suzuki .content .instructors div a:visited, #page_suzuki .content .instructors div a:link, #page_suzuki .content .instructors div a:hover, #page_suzuki .content .instructors div a:active, #page_suzuki .content .instructors div .specialty, #page_lesson_piano .content .button a, #page_lesson_strings .content .button a, #page_lesson_drum .content .button a, #page_lesson_guitar .content .button a,
+#page_lesson_voice .content .button a, #page_lesson_doublebass .content .button a, #page_suzuki .content .button a {
+  text-align: center; }
+
+.align-left {
+  text-align: left; }
+
+.align-right {
+  text-align: right; }
+
+.align-justify {
+  text-align: justify; }
+
+.margin-lr, main .carousel, main .line, main .fav-brands div {
+  margin: 0 7.1875rem; }
+
+.margin-l {
+  margin-left: 7.1875rem; }
+
+.margin-r {
+  margin-right: 7.1875rem; }
+
+.padding-r {
+  padding-right: 7.1875rem; }
+
+.padding-lr {
+  padding: 0 7.1875rem; }
+
+.center, .content-width, #page_repairs-resto h1, #page_repairs-resto h2, #page_repairs-resto p, .content, #page_lesson_piano .content .music-lessons > div, #page_lesson_strings .content .music-lessons > div, #page_lesson_drum .content .music-lessons > div, #page_lesson_guitar
+.content .music-lessons > div, #page_lesson_voice .content .music-lessons > div, #page_lesson_doublebass .content .music-lessons > div, #page_suzuki .content .music-lessons > div, #page_lesson_piano .content .music-lessons > div div a:visited img, #page_lesson_piano .content .music-lessons > div div a:link img, #page_lesson_piano .content .music-lessons > div div a:hover img, #page_lesson_piano .content .music-lessons > div div a:active img, #page_lesson_strings .content .music-lessons > div div a:visited img, #page_lesson_strings .content .music-lessons > div div a:link img, #page_lesson_strings .content .music-lessons > div div a:hover img, #page_lesson_strings .content .music-lessons > div div a:active img, #page_lesson_drum .content .music-lessons > div div a:visited img, #page_lesson_drum .content .music-lessons > div div a:link img, #page_lesson_drum .content .music-lessons > div div a:hover img, #page_lesson_drum .content .music-lessons > div div a:active img, #page_lesson_guitar
+.content .music-lessons > div div a:visited img, #page_lesson_guitar
+.content .music-lessons > div div a:link img, #page_lesson_guitar
+.content .music-lessons > div div a:hover img, #page_lesson_guitar
+.content .music-lessons > div div a:active img, #page_lesson_voice .content .music-lessons > div div a:visited img, #page_lesson_voice .content .music-lessons > div div a:link img, #page_lesson_voice .content .music-lessons > div div a:hover img, #page_lesson_voice .content .music-lessons > div div a:active img, #page_lesson_doublebass .content .music-lessons > div div a:visited img, #page_lesson_doublebass .content .music-lessons > div div a:link img, #page_lesson_doublebass .content .music-lessons > div div a:hover img, #page_lesson_doublebass .content .music-lessons > div div a:active img, #page_suzuki .content .music-lessons > div div a:visited img, #page_suzuki .content .music-lessons > div div a:link img, #page_suzuki .content .music-lessons > div div a:hover img, #page_suzuki .content .music-lessons > div div a:active img, #page_lesson_piano h1, #page_lesson_strings h1, #page_lesson_drum h1, #page_lesson_guitar h1,
+#page_lesson_voice h1, #page_lesson_doublebass h1, #page_suzuki h1, #page_lesson_piano .content .instructors, #page_lesson_strings .content .instructors, #page_lesson_drum .content .instructors, #page_lesson_guitar .content .instructors,
+#page_lesson_voice .content .instructors, #page_lesson_doublebass .content .instructors, #page_suzuki .content .instructors, #page_lesson_piano .content .instructors div a:visited img, #page_lesson_piano .content .instructors div a:link img, #page_lesson_piano .content .instructors div a:hover img, #page_lesson_piano .content .instructors div a:active img, #page_lesson_piano .content .instructors div .specialty img, #page_lesson_strings .content .instructors div a:visited img, #page_lesson_strings .content .instructors div a:link img, #page_lesson_strings .content .instructors div a:hover img, #page_lesson_strings .content .instructors div a:active img, #page_lesson_strings .content .instructors div .specialty img, #page_lesson_drum .content .instructors div a:visited img, #page_lesson_drum .content .instructors div a:link img, #page_lesson_drum .content .instructors div a:hover img, #page_lesson_drum .content .instructors div a:active img, #page_lesson_drum .content .instructors div .specialty img, #page_lesson_guitar .content .instructors div a:visited img, #page_lesson_guitar .content .instructors div a:link img, #page_lesson_guitar .content .instructors div a:hover img, #page_lesson_guitar .content .instructors div a:active img, #page_lesson_guitar .content .instructors div .specialty img,
+#page_lesson_voice .content .instructors div a:visited img,
+#page_lesson_voice .content .instructors div a:link img,
+#page_lesson_voice .content .instructors div a:hover img,
+#page_lesson_voice .content .instructors div a:active img,
+#page_lesson_voice .content .instructors div .specialty img, #page_lesson_doublebass .content .instructors div a:visited img, #page_lesson_doublebass .content .instructors div a:link img, #page_lesson_doublebass .content .instructors div a:hover img, #page_lesson_doublebass .content .instructors div a:active img, #page_lesson_doublebass .content .instructors div .specialty img, #page_suzuki .content .instructors div a:visited img, #page_suzuki .content .instructors div a:link img, #page_suzuki .content .instructors div a:hover img, #page_suzuki .content .instructors div a:active img, #page_suzuki .content .instructors div .specialty img, #page_lesson_piano .content .button, #page_lesson_strings .content .button, #page_lesson_drum .content .button, #page_lesson_guitar .content .button,
+#page_lesson_voice .content .button, #page_lesson_doublebass .content .button, #page_suzuki .content .button {
+  margin: 0 auto; }
+
+.margin-wrapper, main .content {
+  margin: 1.875rem; }
+
+.padding-wrapper, #page_contact #form_contact {
+  padding: 1.875rem; }
+
+.red {
+  color: #BE1F20; }
+
+.black {
+  color: black; }
+
+html {
+  box-sizing: border-box;
+  -webkit-text-size-adjust: none;
+  width: 100%; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 100%;
+  overflow: visible; }
+
+/*#nav-secondary { 
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+}*/
+a:link, a:visited, a:active, a:hover {
+  text-decoration: none; }
+
+input, textarea {
+  border: 1px solid #EAEAEA; }
+
+input {
+  float: left;
+  height: 1.875rem;
+  padding-left: 0.625rem; }
+
+/*.button {
+    display: table;
+    height: $button-height;
+    font-family: Muli;
+    text-decoration: none;
+    a:link, a:visited, a:active, a:hover {
+        display: table-cell;
+        height: 100%;
+        text-align: center;
+        vertical-align: middle;
+    }
+}*/
+.deco-border-tb, .page_not-home h2, #page_repairs-resto h1, #page_repairs-resto h2, #nav_rental .title, #page_lesson_piano h2.fancy, #page_lesson_strings h2.fancy, #page_lesson_drum h2.fancy, #page_lesson_guitar
+h2.fancy, #page_lesson_voice h2.fancy, #page_lesson_doublebass h2.fancy, #page_suzuki h2.fancy, #page_lesson_piano h1, #page_lesson_strings h1, #page_lesson_drum h1, #page_lesson_guitar h1,
+#page_lesson_voice h1, #page_lesson_doublebass h1, #page_suzuki h1 {
+  border-bottom: 1px solid #EAEAEA;
+  border-top: 1px solid #EAEAEA;
+  padding: 0.5rem 0; }
+
+/*header {
+    background-color: white;
+    display: block;
+    .logo {
+        img {
+        display: inline-block;
+        float: left;
+        height: auto;
+        margin-right: rem-calc(45);
+        max-width: rem-calc(210);
+        padding-bottom: rem-calc(20);
+        padding-left:rem-calc(18);
+        }
+    }
+
+    .search {
+        .button {
+            a:link, a:visited, a:hover, a:active {
+                background-color: $red;
+                color: white;
+                font-family: icons;
+                font-size: rem-calc(22);
+            }
+        }
+    }
+}*/
+h1, h2, p, section, section > *, table, ul, > .wrap {
+  margin-bottom: 1.5625rem;
+  margin-top: 1.5625rem; }
+
+#list_rental-policy {
+  list-style: none;
+  margin-left: 0.75rem; }
+  #list_rental-policy li:before {
+    content: "- "; }
+
+.slideshow {
+  clear: both;
+  padding: 0; }
+  .slideshow div img {
+    width: 100%; }
+
+/* Slider */
+.slick-loading .slick-list {
+  background: #fff slick-image-url("ajax-loader.gif") center center no-repeat; }
+
+/* Arrows */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  line-height: 0;
+  font-size: 0;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 50%;
+  margin-top: -10px;
+  padding: 0;
+  border: none;
+  outline: none; }
+  .slick-prev:hover, .slick-prev:focus,
+  .slick-next:hover,
+  .slick-next:focus {
+    outline: none;
+    background: transparent;
+    color: transparent; }
+    .slick-prev:hover:before, .slick-prev:focus:before,
+    .slick-next:hover:before,
+    .slick-next:focus:before {
+      opacity: 0.5; }
+  .slick-prev.slick-disabled:before,
+  .slick-next.slick-disabled:before {
+    opacity: 1; }
+
+.slick-prev:before, .slick-next:before {
+  font-family: "Icons";
+  font-size: 30px;
+  line-height: 1;
+  color: black;
+  opacity: .25;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  z-index: 1000; }
+
+.slick-prev {
+  left: 0; }
+  @media screen and (min-width: 34em) {
+    .slick-prev {
+      left: 15px; } }
+  [dir="rtl"] .slick-prev {
+    left: auto;
+    right: -25px; }
+  .slick-prev:before {
+    content: "i"; }
+    [dir="rtl"] .slick-prev:before {
+      content: "j"; }
+
+.slick-next {
+  right: 10px; }
+  @media screen and (min-width: 34em) {
+    .slick-next {
+      right: 25px; } }
+  [dir="rtl"] .slick-next {
+    left: -25px;
+    right: auto; }
+  .slick-next:before {
+    content: "j"; }
+    [dir="rtl"] .slick-next:before {
+      content: "i"; }
+
+/* Dots */
+.slick-slider {
+  margin-bottom: 2.5rem; }
+
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  width: 100%; }
+  @media screen and (min-width: 34em) {
+    .slick-dots {
+      bottom: -50px; } }
+  .slick-dots li {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer; }
+    .slick-dots li button {
+      border: 0;
+      background: transparent;
+      display: block;
+      height: 20px;
+      width: 20px;
+      outline: none;
+      line-height: 0;
+      font-size: 0;
+      color: transparent;
+      padding: 5px;
+      cursor: pointer; }
+      .slick-dots li button:hover, .slick-dots li button:focus {
+        outline: none; }
+        .slick-dots li button:hover:before, .slick-dots li button:focus:before {
+          opacity: 1; }
+      .slick-dots li button:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "u";
+        width: 20px;
+        height: 20px;
+        font-family: "Icons";
+        font-size: 1.75rem;
+        line-height: 20px;
+        text-align: center;
+        color: #ACACAC;
+        opacity: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale; }
+        @media screen and (min-width: 34em) {
+          .slick-dots li button:before {
+            font-size: 2.625rem; } }
+    .slick-dots li.slick-active button:before {
+      color: #BE1F20;
+      opacity: 1; }
+
+.small {
+  display: none !important; }
+
+.visible {
+  visibility: visible !important; }
+
+.hidden {
+  visibility: hidden !important; }
+
+.display-none {
+  display: none !important; }
+
+.display-block {
+  display: block !important; }
+
+.display-inline_block {
+  display: inline-block !important; }
+
+.display-inline {
+  display: inline !important; }
+
+html, body {
+  min-height: 100%; }
+
+.button {
+  display: table;
+  height: 1.875rem; }
+
+.button > * {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center; }
+
+/*.button, header .left_large, .nav-level-2, .nav-level-2 .nav-item {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.button, header, header .right_large, header .top_large, header .search, #nav-ecomm, 
+#nav-level-1, header .left_large, .nav-level-2, .nav-level-2 .nav-item {
+    display: -webkit-box;       OLD - iOS 6-, Safari 3.1-6           OLD - Firefox 19- (buggy but mostly works) 
+    display: -ms-flexbox;       TWEENER - IE 10 
+    display: -webkit-flex;      NEW - Chrome 
+    display: flex;              NEW, Spec - Opera 12.1, Firefox 20+ 
+}*/
+header {
+  display: block;
+  /*    -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+      align-items: flex-start;*/
+  background-color: white;
+  height: 8.4375rem;
+  /*    -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;*/
+  position: fixed;
+  width: 100vw;
+  z-index: 2000;
+  vertical-align: middle; }
+
+header .logo {
+  display: inline-block;
+  height: 100%;
+  padding-right: 2.8125rem;
+  padding-top: 2.8125rem;
+  vertical-align: top;
+  width: 30.41667%;
+  text-align: right; }
+
+header .logo img {
+  height: auto;
+  max-width: 12.8125rem; }
+
+/*header, header .top_large, header .search, #nav-ecomm {
+    -webkit-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+}*/
+/*header .right_large {
+        -webkit-align-content: flex-start;
+        -ms-flex-line-pack: start;
+        align-content: flex-start;
+        -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+    position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}*/
+/*header .top_large {
+    align-items: center;
+    
+    justify-content: center;
+    padding-bottom: rem-calc(18);
+}*/
+header > .container {
+  display: inline-block;
+  height: 100%;
+  padding-top: 3rem;
+  width: 69.58333%; }
+
+header > .container > div {
+  vertical-align: middle; }
+
+.search {
+  /*    -webkit-box-ordinal-group: 2;
+      -webkit-order: 1;
+      -ms-flex-order: 1;
+      order: 1;*/
+  padding-right: 1.5625rem; }
+
+.search, #nav-ecomm {
+  display: inline-block; }
+
+header .search input {
+  /*    -webkit-box-flex: 5;
+      -webkit-flex: 5;
+      -ms-flex: 5;
+      flex: 5;*/
+  display: inline-block;
+  width: 25rem; }
+
+header .search .button {
+  background-color: #BE1F20;
+  display: inline-block;
+  /*    -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1;*/
+  text-align: center;
+  width: 4.375rem; }
+
+header .search .button > * {
+  margin: 0 auto;
+  transform: translateY(50%);
+  -moz-transform: translateY(25%); }
+
+/*#nav-ecomm {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+}*/
+#nav-ecomm img {
+  margin-right: 0.4375rem;
+  transform: translateY(50%); }
+
+#nav-ecomm i {
+  margin-left: 0.4375rem; }
+
+#nav-ecomm .button {
+  background-color: #fafafa;
+  border: #d6d6d6 solid 1px;
+  color: #8a8688;
+  /*    -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1;*/
+  float: left;
+  font-family: 'Muli';
+  font-size: 0.6875rem;
+  width: 7.1875rem;
+  text-transform: uppercase;
+  padding: 0 0.625rem;
+  white-space: nowrap; }
+
+#nav-ecomm a:last-of-type {
+  border-left: 0; }
+
+#nav-primary {
+  /*    -webkit-box-ordinal-group: 4;
+      -webkit-order: 3;
+      -ms-flex-order: 3;
+      order: 3;*/
+  display: block;
+  padding-top: 1.125rem; }
+
+#nav-level-1 {
+  position: absolute;
+  /*    -webkit-box-align: baseline;
+      -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+      align-items: baseline;*/ }
+
+#nav-level-1 > .nav-item {
+  display: inline-block;
+  float: left;
+  position: relative; }
+
+#nav-level-1 > .nav-item > a, #nav-level-1 > .nav-item > span {
+  color: black;
+  display: block;
+  font-family: Muli;
+  font-size: 0.875rem;
+  letter-spacing: -1px;
+  padding-right: 1.875rem;
+  text-transform: uppercase;
+  cursor: pointer; }
+
+#nav-level-1 > .nav-item:last-of-type a {
+  padding-right: 0; }
+
+#nav-level-1 > .nav-item > span .icon-triangle-down {
+  font-size: 0.6875rem;
+  padding-left: 0.25rem; }
+
+#nav-level-1 > .nav-item > span .icon-triangle-up {
+  color: #ACACAC;
+  display: block;
+  font-size: 1.75rem;
+  position: relative;
+  left: 15%;
+  top: 0.5rem;
+  visibility: hidden; }
+
+.nav-level-2 {
+  background-color: #ACACAC;
+  display: block;
+  height: 2.3125rem;
+  position: absolute;
+  top: 2.3125rem;
+  visibility: hidden;
+  text-align: center;
+  width: 100vw; }
+
+.nav-level-2 .nav-item {
+  display: inline-block;
+  border-right: 1px solid #EAEAEA;
+  transform: translateY(50%); }
+
+.nav-level-2 li:last-of-type {
+  border: 0; }
+
+.nav-level-2 a, .nav-level-2 span {
+  color: #EAEAEA;
+  font-family: 'Muli';
+  font-size: 0.8125rem;
+  padding: 0 1rem;
+  cursor: pointer; }
+
+.nav-level-3 {
+  background-color: rgba(255, 255, 255, 0.9);
+  display: block;
+  width: 100vw;
+  margin: 0 -1000rem;
+  padding: 0 1000em 0.625rem 1000em;
+  position: absolute;
+  top: 1.75rem;
+  text-align: left;
+  visibility: hidden; }
+
+.nav-level-3 .nav-item {
+  display: block;
+  width: 100vw;
+  padding-bottom: 0.9375rem;
+  position: relative; }
+
+.nav-level-3 a, .nav-level-3 span {
+  color: #ACACAC;
+  font-family: Muli; }
+
+#overlay-large {
+  height: 100vh;
+  background: transparent;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 100; }
+
+p {
+  font-family: Muli;
+  font-size: 0.9rem;
+  line-height: 150%;
+  margin-bottom: 1rem;
+  text-align: justify; }
+
+.content-width, #page_repairs-resto h1, #page_repairs-resto h2, #page_repairs-resto p {
+  max-width: 40rem; }
+
+.content {
+  font-family: "Muli";
+  font-size: 0.875rem;
+  line-height: 150%;
+  margin-bottom: 3.75rem;
+  max-width: 40rem;
+  text-align: justify; }
+  .content h1, .content h2 {
+    text-align: center; }
+
+main {
+  padding-bottom: 7rem;
+  position: relative;
+  top: 8.4375rem; }
+  main h1, main h2, main table, main ol, main ul {
+    margin-bottom: 1.5625rem;
+    margin-top: 1.5625rem; }
+
+.coupon {
+  background-color: #EAEAEA;
+  display: table;
+  margin: 5rem auto;
+  max-width: 75rem;
+  padding: 1.75rem;
+  width: 100%; }
+  .coupon .wrap {
+    border: 1px #BE1F20 dashed;
+    display: table-cell;
+    padding: 3rem 0; }
+    .coupon .wrap div {
+      display: inline-block;
+      vertical-align: top; }
+    .coupon .wrap div:first-of-type {
+      text-transform: uppercase;
+      width: 36%; }
+      .coupon .wrap div:first-of-type h2 {
+        line-height: 115%;
+        margin: 0;
+        padding: 0;
+        text-align: right; }
+    .coupon .wrap div:last-of-type {
+      font-family: Muli;
+      font-size: 0.875rem;
+      line-height: 150%;
+      padding-left: 2rem;
+      text-align: justify;
+      width: 50%; }
+      .coupon .wrap div:last-of-type ul {
+        margin-top: 1rem; }
+        .coupon .wrap div:last-of-type ul li:before {
+          color: #BE1F20;
+          content: "\002022";
+          padding-right: 0.5rem; }
+
+.page_lesson_ img {
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto; }
+.page_lesson_ .reorder {
+  text-align: center;
+  width: 100%; }
+
+#page_music-edu .sec_music-lessons {
+  text-align: center; }
+  #page_music-edu .sec_music-lessons div {
+    display: inline-block;
+    vertical-align: top;
+    width: 25%; }
+    #page_music-edu .sec_music-lessons div a:link, #page_music-edu .sec_music-lessons div a:visited, #page_music-edu .sec_music-lessons div a:active, #page_music-edu .sec_music-lessons div a:hover {
+      color: #BE1F20;
+      font-family: Muli;
+      font-size: 0.9rem; }
+  #page_music-edu .sec_music-lessons img {
+    display: block;
+    margin: 1rem auto; }
+#page_music-edu .tb_pricing {
+  text-align: center;
+  vertical-align: middle;
+  width: 100%; }
+  #page_music-edu .tb_pricing caption {
+    background-color: #F7F7F7;
+    color: #BE1F20;
+    font-size: 1.375rem;
+    padding: 1rem;
+    text-align: center; }
+  #page_music-edu .tb_pricing th {
+    background-color: #EAEAEA;
+    color: #BE1F20;
+    font-size: 0.85rem; }
+  #page_music-edu .tb_pricing tbody tr {
+    border-bottom: 2px #F7F7F7 solid; }
+  #page_music-edu .tb_pricing tbody .data_duration {
+    background-color: #F7F7F7;
+    vertical-align: middle; }
+  #page_music-edu .tb_pricing tbody .data_grp1:nth-of-type(4) {
+    border-bottom: 5px solid #F7F7F7; }
+  #page_music-edu .tb_pricing tbody .data_grp1 .data_duration {
+    border-bottom: 5px solid white; }
+  #page_music-edu .tb_pricing td, #page_music-edu .tb_pricing th {
+    padding: .5rem 0; }
+#page_music-edu #tb_lessons_individual td, #page_music-edu #tb_lessons_individual th {
+  width: 33.33333%; }
+#page_music-edu #tb_lessons_group td, #page_music-edu #tb_lessons_group th {
+  width: 25%; }
+
+#page_repairs-resto h1, #page_repairs-resto h2 {
+  margin-top: 1.5625rem;
+  margin-bottom: 1.5625rem;
+  text-align: center; }
+#page_repairs-resto .reorder {
+  display: table;
+  width: 100%; }
+#page_repairs-resto .list_repairs {
+  display: table-header-group;
+  text-align: center; }
+  #page_repairs-resto .list_repairs li {
+    color: #8a8688;
+    display: inline-block;
+    font-family: 'Open Sans';
+    font-size: 1.15rem;
+    font-weight: bold;
+    border-right: 2px solid #8a8688;
+    margin-bottom: 1.5625rem;
+    padding-left: 2rem;
+    padding-right: 2rem; }
+    #page_repairs-resto .list_repairs li:first-of-type {
+      padding-left: 0; }
+    #page_repairs-resto .list_repairs li:last-of-type {
+      border: 0;
+      padding-right: 0; }
+
+#nav_rental {
+  display: block;
+  padding-bottom: 19rem;
+  position: static;
+  width: 100%; }
+  #nav_rental a:link, #nav_rental a:visited, #nav_rental a:active, #nav_rental a:hover {
+    color: #BE1F20;
+    font-family: Muli;
+    font-size: 0.9rem; }
+    #nav_rental a:link span, #nav_rental a:visited span, #nav_rental a:active span, #nav_rental a:hover span {
+      position: relative;
+      top: -0.4375rem; }
+    #nav_rental a:link i, #nav_rental a:visited i, #nav_rental a:active i, #nav_rental a:hover i {
+      color: #ACACAC;
+      font-size: 1.5rem; }
+  #nav_rental .wrap {
+    width: 100%; }
+  #nav_rental .prev, #nav_rental .next {
+    position: absolute;
+    top: 11.25rem;
+    z-index: 1; }
+  #nav_rental .prev {
+    left: 5%; }
+  #nav_rental .next {
+    right: 5%; }
+  #nav_rental .wrap_img {
+    display: table;
+    position: absolute;
+    text-align: center;
+    top: 15rem;
+    width: 100%; }
+    #nav_rental .wrap_img .aligner {
+      display: block;
+      position: relative; }
+    #nav_rental .wrap_img img {
+      display: table-cell;
+      margin: 0 auto;
+      text-align: center; }
+  #nav_rental .title {
+    display: table;
+    position: absolute;
+    top: 10.625rem;
+    width: 100%;
+    z-index: 0; }
+    #nav_rental .title h1 {
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle; }
+
+#page_contact h1 {
+  margin-top: 0; }
+#page_contact p {
+  text-align: right; }
+#page_contact .map {
+  height: 0;
+  margin: 0 auto 3.75rem auto;
+  max-width: 75rem;
+  max-height: 27.5rem;
+  overflow: hidden;
+  padding-bottom: 36.66667%;
+  position: relative; }
+  #page_contact .map iframe {
+    height: 100%;
+    position: absolute;
+    width: 100%; }
+#page_contact #section_contact .wrap {
+  display: inline-block;
+  padding-right: 10%;
+  vertical-align: top;
+  width: 50%; }
+  #page_contact #section_contact .wrap:first-of-type {
+    text-align: right; }
+  #page_contact #section_contact .wrap:last-of-type {
+    font-family: Muli;
+    font-size: 1.2rem;
+    text-align: left; }
+    #page_contact #section_contact .wrap:last-of-type img {
+      padding-right: 2rem;
+      vertical-align: middle; }
+    #page_contact #section_contact .wrap:last-of-type div {
+      margin-bottom: 1rem; }
+      #page_contact #section_contact .wrap:last-of-type div a:link, #page_contact #section_contact .wrap:last-of-type div a:visited, #page_contact #section_contact .wrap:last-of-type div a:active, #page_contact #section_contact .wrap:last-of-type div a:hover {
+        color: inherit; }
+#page_contact #section_store-hours {
+  margin-bottom: 5%;
+  padding-right: 10%;
+  text-align: right;
+  width: 50%; }
+#page_contact #form_contact {
+  padding: 5%;
+  background-color: #EAEAEA;
+  display: block; }
+  #page_contact #form_contact form {
+    width: 100%; }
+    #page_contact #form_contact form .wrap {
+      display: inline-block;
+      vertical-align: top;
+      width: 50%; }
+      #page_contact #form_contact form .wrap label, #page_contact #form_contact form .wrap input, #page_contact #form_contact form .wrap textarea {
+        clear: both;
+        display: block;
+        width: 100%; }
+      #page_contact #form_contact form .wrap input, #page_contact #form_contact form .wrap textarea {
+        border: 1px solid #ACACAC; }
+      #page_contact #form_contact form .wrap label {
+        font-family: Muli;
+        font-size: 0.74375rem; }
+      #page_contact #form_contact form .wrap input {
+        margin-bottom: 0.75rem; }
+      #page_contact #form_contact form .wrap .button, #page_contact #form_contact form .wrap input {
+        height: 2.1875rem; }
+      #page_contact #form_contact form .wrap .button {
+        background-color: #BE1F20;
+        clear: both;
+        margin: 0 auto;
+        margin-top: 0.9375rem;
+        width: 70%; }
+        #page_contact #form_contact form .wrap .button a:link, #page_contact #form_contact form .wrap .button a:visited, #page_contact #form_contact form .wrap .button a:active, #page_contact #form_contact form .wrap .button a:hover {
+          color: white; }
+      #page_contact #form_contact form .wrap:first-of-type {
+        padding-right: 10%; }
+      #page_contact #form_contact form .wrap:last-of-type textarea {
+        height: 9.375rem;
+        margin-bottom: 1.25rem; }
+
+#page_about-us .col-2 {
+  display: inline-block;
+  width: 50%; }
+#page_about-us .content {
+  padding-right: 7.5rem; }
+#page_about-us .nav_about-us {
+  padding-right: 4rem;
+  text-align: right;
+  vertical-align: top; }
+  #page_about-us .nav_about-us h1 {
+    margin-top: 0; }
+  #page_about-us .nav_about-us a:link, #page_about-us .nav_about-us a:visited, #page_about-us .nav_about-us a:active, #page_about-us .nav_about-us a:hover {
+    color: #BE1F20;
+    display: block;
+    font-family: Muli;
+    font-size: 1.2rem;
+    margin-top: 2rem; }
+
+/* HEADER --------------------------------------------------------------------*/
+/*header {
+    background-color: white;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 2000;
+    position: fixed;
+    
+    .search {
+        display: inline-block;
+        margin-right: rem-calc(25);
+        input {
+            width: rem-calc(400);
+            margin: 0;
+        }
+        .button {
+            display: table;
+            float: left;
+            height: $button-height;
+            vertical-align: middle;
+            width: rem-calc(70);
+            a:link, a:visited, a:hover, a:active {
+                display: table-cell;
+                vertical-align: middle;
+                width: 100%;
+                img {
+                    display: block;
+                    margin: 0 auto;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}
+#nav-secondary {
+    clear: right;
+    vertical-align: top;
+    li {
+        display:  table;
+
+    }
+    li:first-child {
+        display: none;
+    }
+    a:link, a:visited, a:hover, a:active  {
+        background-color: $gray-lightest;
+        box-shadow: 0 0 0 1px #ebebeb;
+        color: $gray-dark;
+        display: table-cell;
+        font-size: rem-calc(11);
+        vertical-align: middle;
+        width: rem-calc(115);
+        span {
+            vertical-align: middle;
+        }
+        img {
+            margin-right: rem-calc(5);
+            vertical-align: middle;
+        }
+        .icon-triangle-down {
+            font-size: rem-calc(10);
+            margin-left: rem-calc(5);
+            margin-right: 0;
+        }
+
+    }
+}
+
+.mq-large-nav {
+    position: relative; top: rem-calc(70); left: rem-calc(120);
+}
+
+#nav-primary {
+    background-color: white;
+    display: block;
+    font-family: Muli;
+    margin: 0 auto;
+    position: fixed; top: rem-calc(70); left: rem-calc(120);
+    width: rem-calc(730);
+    .level-1 {
+        >li {
+            display: inline-block;
+            >a:link, >a:visited, >a:hover, >a:active  {
+                color: black;
+                font-size: rem-calc(14);
+                letter-spacing: -1px;
+                margin-right: rem-calc(35);
+                padding-bottom: rem-calc(10);
+                text-transform: uppercase;
+
+                .icon-triangle-down {
+                    margin-left: rem-calc(5);
+                    font-size: 0.70rem;
+                }
+                &.has-nav-sub {
+                    margin-right: rem-calc(10);
+                }
+                .icon-triangle-up {
+                    color: $gray-medium;
+                    display: inline-block;
+                    font-size: rem-calc(25);
+                    line-height: 0;
+                    margin: 0;
+                    padding: 0;
+                    position: relative; top: rem-calc(27); left: -58%;
+                    visibility: hidden;
+                }
+            }
+            &:last-child a {
+                margin-right: 0;
+            }
+
+            .level-2 {
+                background-color: $gray-medium;
+                display: none; --Hide by default--
+                position: absolute; top: rem-calc(49); left: -15%;
+                white-space: nowrap;
+                z-index: 1000;
+                .level-2-item {
+                    display: inline-block;
+                    >a:link, >a:visited, >a:hover, >a:active {
+                        border-right: 1px solid white;
+                        display: block;
+                        color: white;
+                        text-transform: none;
+                        font-size: rem-calc(13);
+                        letter-spacing: 0;
+                        line-height: 100%;
+                        padding-left: rem-calc(10);
+                        padding-right: rem-calc(15);
+
+                    }
+                    >a:hover {
+                        text-decoration: underline;
+                    }
+                    &:first-of-type {
+                        >a {
+                            padding-left: 0;
+                        }
+                    }
+                    &:last-of-type{
+                        >a {
+                            border: none;
+                            padding-right: 0;
+                        }
+                    }
+                    .level-3 {
+                        background-color: rgba(255,255,255,0.9);
+                        display: none;
+                        padding-bottom: rem-calc(30);
+                        position: absolute; top: rem-calc(39);
+                        width: 100%;
+
+                        li a {
+                            color: $gray-dark;
+                            font-size: rem-calc(14);
+                            display: block;
+                            text-align: left;
+                            margin-bottom: rem-calc(10);
+                            position: relative; left: 0;
+                        }
+
+                    }
+                }
+
+            }
+
+        }
+
+    }
+}
+
+#level-3-bg {
+    background-color: rgba(255,255,255,0.9);
+    position: absolute; top: rem-calc(147);
+    display: none;
+    width: 100%;
+    z-index: 10;
+}
+
+#level-2-bg {
+    background-color: $gray-medium;
+    display: none;
+    height: rem-calc(37);
+    position: absolute; top: rem-calc(110);
+    width: 100%;
+    z-index: 20;
+}*/
+/* CONTENT -------------------------------------------------------------------*/
+main {
+  background-color: white;
+  width: 100%;
+  z-index: 1000; }
+  main .slideshow {
+    clear: both;
+    margin-bottom: 8.125rem;
+    margin-top: 0;
+    padding-top: 0;
+    width: 100%; }
+  main .carousel {
+    clear: both; }
+    main .carousel h2 {
+      color: #ACACAC;
+      font-size: 1.75rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      margin-bottom: 2.5rem; }
+  main .line {
+    border-bottom: 1px solid #EAEAEA;
+    clear: both;
+    width: auto;
+    margin-bottom: 6.875rem; }
+  main .nav-hot {
+    margin: 0 auto;
+    margin-bottom: 8.75rem;
+    display: table; }
+    main .nav-hot div {
+      vertical-align: top; }
+    main .nav-hot div:first-of-type {
+      border-right: 2px white solid;
+      display: table-cell;
+      width: 50%; }
+    main .nav-hot div:last-of-type {
+      border-top: 1px white solid; }
+      main .nav-hot div:last-of-type img:first-of-type {
+        border-right: 2px white solid; }
+  main .fav-brands {
+    padding: 0.625rem 0;
+    text-align: center; }
+    main .fav-brands h2 {
+      border-bottom: 1px solid #EAEAEA;
+      border-width: 100%;
+      font-family: Muli;
+      font-weight: bold;
+      font-size: 0.875rem;
+      line-height: 0; }
+      main .fav-brands h2 span {
+        background-color: white;
+        height: 100%;
+        padding: 0 0.9375rem;
+        text-transform: uppercase; }
+    main .fav-brands div {
+      margin-top: 0.625rem; }
+      main .fav-brands div img {
+        margin-right: 3.125rem;
+        vertical-align: middle; }
+      main .fav-brands div img:last-of-type {
+        margin-right: 0; }
+  main .banner {
+    display: block;
+    margin-bottom: 3.4375rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    clear: both; }
+  main h1 {
+    margin-bottom: 0.75rem; }
+  main h1, main h2 {
+    color: #BE1F20;
+    font-family: "Muli";
+    font-size: 1.75rem; }
+  main h2 {
+    white-space: nowrap; }
+  main .nav-content {
+    display: inline-block;
+    text-align: right;
+    vertical-align: top; }
+    main .nav-content a {
+      color: #BE1F20;
+      font-family: "Muli";
+      text-align: right;
+      display: block;
+      font-size: 1.125rem;
+      margin-top: 1.625rem; }
+  main h1, main h2 {
+    margin-bottom: 1.625rem; }
+  main img.rental {
+    margin: 0 auto;
+    margin-bottom: 3.125rem; }
+  main p {
+    margin-bottom: 1.25rem; }
+    main p .phone-number {
+      color: inherit; }
+
+#nav_rental-types {
+  text-align: center;
+  margin-top: 2.1875rem; }
+  #nav_rental-types div {
+    display: inline-block;
+    width: 33.33333%; }
+    #nav_rental-types div a {
+      color: black; }
+    #nav_rental-types div img {
+      margin-bottom: 2.1875rem; }
+    #nav_rental-types div h3 {
+      color: #BE1F20;
+      font-size: 1.125rem; }
+
+.page_rentals_ {
+  margin-bottom: 12.5rem; }
+  .page_rentals_ h2, .page_rentals_ h3 {
+    font-family: "Open Sans";
+    font-size: 1.5rem;
+    margin-bottom: 0.9375rem;
+    text-align: center; }
+  .page_rentals_ h3 {
+    margin: 3.125rem 0;
+    margin-top: 3.75rem; }
+  .page_rentals_ p {
+    font-family: Muli;
+    font-size: 0.875rem;
+    line-height: 150%;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 1.625rem; }
+  .page_rentals_ ol {
+    list-style-type: decimal;
+    margin-left: 5rem; }
+    .page_rentals_ ol li {
+      display: list-item;
+      list-style: decimal; }
+  .page_rentals_ #tb_rental-prices {
+    width: 100%;
+    text-align: center; }
+    .page_rentals_ #tb_rental-prices th, .page_rentals_ #tb_rental-prices td {
+      vertical-align: middle; }
+    .page_rentals_ #tb_rental-prices th, .page_rentals_ #tb_rental-prices .instrument, .page_rentals_ #tb_rental-prices .model, .page_rentals_ #tb_rental-prices .condition {
+      background-color: #fafafa; }
+    .page_rentals_ #tb_rental-prices th {
+      color: #BE1F20;
+      font-size: 0.75rem;
+      letter-spacing: 0;
+      line-height: 150%;
+      padding: 0.9375rem 0;
+      text-transform: uppercase; }
+      .page_rentals_ #tb_rental-prices th span {
+        display: block;
+        font-size: 0.625rem; }
+    .page_rentals_ #tb_rental-prices tr {
+      border-bottom: 2px #fafafa solid; }
+    .page_rentals_ #tb_rental-prices .instrument {
+      border-bottom: 2px solid white;
+      padding: 0.625rem 0 0.625rem 0.3125rem; }
+    .page_rentals_ #tb_rental-prices .model, .page_rentals_ #tb_rental-prices .condition {
+      border-bottom: 2px solid white;
+      color: #ACACAC;
+      font-size: 0.6875rem;
+      padding: 0.625rem 0.9375rem 0.625rem 0;
+      text-align: right; }
+  .page_rentals_ .tb_sizing-guide {
+    background-color: #EAEAEA;
+    background-image: -webkit-linear-gradient(left, white, #EAEAEA, white);
+    background-image: linear-gradient(to right, white, #EAEAEA, white);
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+    width: 78%; }
+    .page_rentals_ .tb_sizing-guide thead tr {
+      background-color: white;
+      background-image: white;
+      font-size: 0.6875rem;
+      text-align: center; }
+      .page_rentals_ .tb_sizing-guide thead tr th {
+        border-right: red 1px solid;
+        padding-bottom: 0.625rem; }
+        .page_rentals_ .tb_sizing-guide thead tr th:last-of-type {
+          border-right: none; }
+        .page_rentals_ .tb_sizing-guide thead tr th.border-none {
+          border-right: none; }
+    .page_rentals_ .tb_sizing-guide tbody .sizes-inst td {
+      border-right: red 1px solid;
+      font-size: 1.3125rem;
+      padding-top: 1.25rem;
+      width: 12.5%; }
+      .page_rentals_ .tb_sizing-guide tbody .sizes-inst td:last-of-type, .page_rentals_ .tb_sizing-guide tbody .sizes-inst td.border-short {
+        border-right: none; }
+      .page_rentals_ .tb_sizing-guide tbody .sizes-inst td.border-short span {
+        border-right: red 1px solid;
+        display: block;
+        margin-top: -0.625rem;
+        padding-bottom: 1.375rem;
+        padding-top: 1.25rem; }
+    .page_rentals_ .tb_sizing-guide tbody .sizes-arm td {
+      color: #8a8688;
+      font-size: 0.75rem;
+      padding: 0.625rem 0; }
+      .page_rentals_ .tb_sizing-guide tbody .sizes-arm td span {
+        font-size: 0.875rem; }
+
+#page_lesson_piano h2.fancy, #page_lesson_strings h2.fancy, #page_lesson_drum h2.fancy, #page_lesson_guitar
+h2.fancy, #page_lesson_voice h2.fancy, #page_lesson_doublebass h2.fancy, #page_suzuki h2.fancy {
+  margin: 3rem 0 1.5rem 0; }
+#page_lesson_piano h2.plain, #page_lesson_strings h2.plain, #page_lesson_drum h2.plain, #page_lesson_guitar
+h2.plain, #page_lesson_voice h2.plain, #page_lesson_doublebass h2.plain, #page_suzuki h2.plain {
+  font-size: 1rem;
+  margin-bottom: .25rem;
+  margin-top: 2.5rem;
+  text-transform: uppercase; }
+#page_lesson_piano .content, #page_lesson_strings .content, #page_lesson_drum .content, #page_lesson_guitar
+.content, #page_lesson_voice .content, #page_lesson_doublebass .content, #page_suzuki .content {
+  text-align: center; }
+  #page_lesson_piano .content img.theme, #page_lesson_strings .content img.theme, #page_lesson_drum .content img.theme, #page_lesson_guitar
+  .content img.theme, #page_lesson_voice .content img.theme, #page_lesson_doublebass .content img.theme, #page_suzuki .content img.theme {
+    margin: 0 0 1.75rem 0; }
+  #page_lesson_piano .content p, #page_lesson_strings .content p, #page_lesson_drum .content p, #page_lesson_guitar
+  .content p, #page_lesson_voice .content p, #page_lesson_doublebass .content p, #page_suzuki .content p {
+    text-align: justify; }
+  #page_lesson_piano .content .music-lessons, #page_lesson_strings .content .music-lessons, #page_lesson_drum .content .music-lessons, #page_lesson_guitar
+  .content .music-lessons, #page_lesson_voice .content .music-lessons, #page_lesson_doublebass .content .music-lessons, #page_suzuki .content .music-lessons {
+    width: 100%; }
+    #page_lesson_piano .content .music-lessons > div, #page_lesson_strings .content .music-lessons > div, #page_lesson_drum .content .music-lessons > div, #page_lesson_guitar
+    .content .music-lessons > div, #page_lesson_voice .content .music-lessons > div, #page_lesson_doublebass .content .music-lessons > div, #page_suzuki .content .music-lessons > div {
+      display: block;
+      margin-bottom: 3rem;
+      width: 100%; }
+      #page_lesson_piano .content .music-lessons > div div, #page_lesson_strings .content .music-lessons > div div, #page_lesson_drum .content .music-lessons > div div, #page_lesson_guitar
+      .content .music-lessons > div div, #page_lesson_voice .content .music-lessons > div div, #page_lesson_doublebass .content .music-lessons > div div, #page_suzuki .content .music-lessons > div div {
+        display: inline-block;
+        width: 25%;
+        vertical-align: top; }
+        #page_lesson_piano .content .music-lessons > div div a:visited, #page_lesson_piano .content .music-lessons > div div a:link, #page_lesson_piano .content .music-lessons > div div a:hover, #page_lesson_piano .content .music-lessons > div div a:active, #page_lesson_strings .content .music-lessons > div div a:visited, #page_lesson_strings .content .music-lessons > div div a:link, #page_lesson_strings .content .music-lessons > div div a:hover, #page_lesson_strings .content .music-lessons > div div a:active, #page_lesson_drum .content .music-lessons > div div a:visited, #page_lesson_drum .content .music-lessons > div div a:link, #page_lesson_drum .content .music-lessons > div div a:hover, #page_lesson_drum .content .music-lessons > div div a:active, #page_lesson_guitar
+        .content .music-lessons > div div a:visited, #page_lesson_guitar
+        .content .music-lessons > div div a:link, #page_lesson_guitar
+        .content .music-lessons > div div a:hover, #page_lesson_guitar
+        .content .music-lessons > div div a:active, #page_lesson_voice .content .music-lessons > div div a:visited, #page_lesson_voice .content .music-lessons > div div a:link, #page_lesson_voice .content .music-lessons > div div a:hover, #page_lesson_voice .content .music-lessons > div div a:active, #page_lesson_doublebass .content .music-lessons > div div a:visited, #page_lesson_doublebass .content .music-lessons > div div a:link, #page_lesson_doublebass .content .music-lessons > div div a:hover, #page_lesson_doublebass .content .music-lessons > div div a:active, #page_suzuki .content .music-lessons > div div a:visited, #page_suzuki .content .music-lessons > div div a:link, #page_suzuki .content .music-lessons > div div a:hover, #page_suzuki .content .music-lessons > div div a:active {
+          color: #BE1F20;
+          font-size: 0.9375rem;
+          display: block; }
+          #page_lesson_piano .content .music-lessons > div div a:visited img, #page_lesson_piano .content .music-lessons > div div a:link img, #page_lesson_piano .content .music-lessons > div div a:hover img, #page_lesson_piano .content .music-lessons > div div a:active img, #page_lesson_strings .content .music-lessons > div div a:visited img, #page_lesson_strings .content .music-lessons > div div a:link img, #page_lesson_strings .content .music-lessons > div div a:hover img, #page_lesson_strings .content .music-lessons > div div a:active img, #page_lesson_drum .content .music-lessons > div div a:visited img, #page_lesson_drum .content .music-lessons > div div a:link img, #page_lesson_drum .content .music-lessons > div div a:hover img, #page_lesson_drum .content .music-lessons > div div a:active img, #page_lesson_guitar
+          .content .music-lessons > div div a:visited img, #page_lesson_guitar
+          .content .music-lessons > div div a:link img, #page_lesson_guitar
+          .content .music-lessons > div div a:hover img, #page_lesson_guitar
+          .content .music-lessons > div div a:active img, #page_lesson_voice .content .music-lessons > div div a:visited img, #page_lesson_voice .content .music-lessons > div div a:link img, #page_lesson_voice .content .music-lessons > div div a:hover img, #page_lesson_voice .content .music-lessons > div div a:active img, #page_lesson_doublebass .content .music-lessons > div div a:visited img, #page_lesson_doublebass .content .music-lessons > div div a:link img, #page_lesson_doublebass .content .music-lessons > div div a:hover img, #page_lesson_doublebass .content .music-lessons > div div a:active img, #page_suzuki .content .music-lessons > div div a:visited img, #page_suzuki .content .music-lessons > div div a:link img, #page_suzuki .content .music-lessons > div div a:hover img, #page_suzuki .content .music-lessons > div div a:active img {
+            display: block;
+            margin-bottom: 1.125rem; }
+#page_lesson_piano #lesson_prices, #page_lesson_strings #lesson_prices, #page_lesson_drum #lesson_prices, #page_lesson_guitar
+#lesson_prices, #page_lesson_voice #lesson_prices, #page_lesson_doublebass #lesson_prices, #page_suzuki #lesson_prices {
+  text-align: center;
+  width: 100%; }
+  #page_lesson_piano #lesson_prices th, #page_lesson_strings #lesson_prices th, #page_lesson_drum #lesson_prices th, #page_lesson_guitar
+  #lesson_prices th, #page_lesson_voice #lesson_prices th, #page_lesson_doublebass #lesson_prices th, #page_suzuki #lesson_prices th {
+    background-color: #F7F7F7;
+    color: #BE1F20;
+    font-size: 0.75rem;
+    padding: 0.9375rem 1.25rem 0.625rem 1.25rem;
+    text-transform: uppercase; }
+    #page_lesson_piano #lesson_prices th.bg-white, #page_lesson_strings #lesson_prices th.bg-white, #page_lesson_drum #lesson_prices th.bg-white, #page_lesson_guitar
+    #lesson_prices th.bg-white, #page_lesson_voice #lesson_prices th.bg-white, #page_lesson_doublebass #lesson_prices th.bg-white, #page_suzuki #lesson_prices th.bg-white {
+      background-color: white; }
+    #page_lesson_piano #lesson_prices th.first, #page_lesson_strings #lesson_prices th.first, #page_lesson_drum #lesson_prices th.first, #page_lesson_guitar
+    #lesson_prices th.first, #page_lesson_voice #lesson_prices th.first, #page_lesson_doublebass #lesson_prices th.first, #page_suzuki #lesson_prices th.first {
+      font-size: 1.25rem;
+      text-transform: capitalize; }
+  #page_lesson_piano #lesson_prices th, #page_lesson_piano #lesson_prices td, #page_lesson_strings #lesson_prices th, #page_lesson_strings #lesson_prices td, #page_lesson_drum #lesson_prices th, #page_lesson_drum #lesson_prices td, #page_lesson_guitar
+  #lesson_prices th, #page_lesson_guitar
+  #lesson_prices td, #page_lesson_voice #lesson_prices th, #page_lesson_voice #lesson_prices td, #page_lesson_doublebass #lesson_prices th, #page_lesson_doublebass #lesson_prices td, #page_suzuki #lesson_prices th, #page_suzuki #lesson_prices td {
+    vertical-align: middle;
+    width: 25%; }
+  #page_lesson_piano #lesson_prices td span, #page_lesson_strings #lesson_prices td span, #page_lesson_drum #lesson_prices td span, #page_lesson_guitar
+  #lesson_prices td span, #page_lesson_voice #lesson_prices td span, #page_lesson_doublebass #lesson_prices td span, #page_suzuki #lesson_prices td span {
+    color: #ACACAC;
+    font-size: smaller;
+    margin-right: 0.5rem; }
+  #page_lesson_piano #lesson_prices td.pad, #page_lesson_strings #lesson_prices td.pad, #page_lesson_drum #lesson_prices td.pad, #page_lesson_guitar
+  #lesson_prices td.pad, #page_lesson_voice #lesson_prices td.pad, #page_lesson_doublebass #lesson_prices td.pad, #page_suzuki #lesson_prices td.pad {
+    padding-top: 1rem; }
+
+#page_lesson_piano .back, #page_lesson_strings .back, #page_lesson_drum .back, #page_lesson_guitar .back,
+#page_lesson_voice .back, #page_lesson_doublebass .back, #page_suzuki .back {
+  margin: 5.5rem auto 1rem auto;
+  max-width: 60.625rem; }
+  #page_lesson_piano .back a:link, #page_lesson_piano .back a:visited, #page_lesson_piano .back a:active, #page_lesson_piano .back a:hover, #page_lesson_strings .back a:link, #page_lesson_strings .back a:visited, #page_lesson_strings .back a:active, #page_lesson_strings .back a:hover, #page_lesson_drum .back a:link, #page_lesson_drum .back a:visited, #page_lesson_drum .back a:active, #page_lesson_drum .back a:hover, #page_lesson_guitar .back a:link, #page_lesson_guitar .back a:visited, #page_lesson_guitar .back a:active, #page_lesson_guitar .back a:hover,
+  #page_lesson_voice .back a:link,
+  #page_lesson_voice .back a:visited,
+  #page_lesson_voice .back a:active,
+  #page_lesson_voice .back a:hover, #page_lesson_doublebass .back a:link, #page_lesson_doublebass .back a:visited, #page_lesson_doublebass .back a:active, #page_lesson_doublebass .back a:hover, #page_suzuki .back a:link, #page_suzuki .back a:visited, #page_suzuki .back a:active, #page_suzuki .back a:hover {
+    color: #ACACAC;
+    font-family: Muli;
+    font-size: 0.75rem; }
+    #page_lesson_piano .back a:link i, #page_lesson_piano .back a:visited i, #page_lesson_piano .back a:active i, #page_lesson_piano .back a:hover i, #page_lesson_strings .back a:link i, #page_lesson_strings .back a:visited i, #page_lesson_strings .back a:active i, #page_lesson_strings .back a:hover i, #page_lesson_drum .back a:link i, #page_lesson_drum .back a:visited i, #page_lesson_drum .back a:active i, #page_lesson_drum .back a:hover i, #page_lesson_guitar .back a:link i, #page_lesson_guitar .back a:visited i, #page_lesson_guitar .back a:active i, #page_lesson_guitar .back a:hover i,
+    #page_lesson_voice .back a:link i,
+    #page_lesson_voice .back a:visited i,
+    #page_lesson_voice .back a:active i,
+    #page_lesson_voice .back a:hover i, #page_lesson_doublebass .back a:link i, #page_lesson_doublebass .back a:visited i, #page_lesson_doublebass .back a:active i, #page_lesson_doublebass .back a:hover i, #page_suzuki .back a:link i, #page_suzuki .back a:visited i, #page_suzuki .back a:active i, #page_suzuki .back a:hover i {
+      font-size: 0.5625rem;
+      margin-right: 0.25rem; }
+#page_lesson_piano h1, #page_lesson_strings h1, #page_lesson_drum h1, #page_lesson_guitar h1,
+#page_lesson_voice h1, #page_lesson_doublebass h1, #page_suzuki h1 {
+  margin-bottom: 1.5rem;
+  max-width: 60.625rem; }
+#page_lesson_piano .content .instructors, #page_lesson_strings .content .instructors, #page_lesson_drum .content .instructors, #page_lesson_guitar .content .instructors,
+#page_lesson_voice .content .instructors, #page_lesson_doublebass .content .instructors, #page_suzuki .content .instructors {
+  display: block;
+  margin-bottom: 3rem;
+  width: 100%; }
+  #page_lesson_piano .content .instructors div, #page_lesson_strings .content .instructors div, #page_lesson_drum .content .instructors div, #page_lesson_guitar .content .instructors div,
+  #page_lesson_voice .content .instructors div, #page_lesson_doublebass .content .instructors div, #page_suzuki .content .instructors div {
+    display: inline-block;
+    width: 33.33333%;
+    vertical-align: top; }
+    #page_lesson_piano .content .instructors div a:visited, #page_lesson_piano .content .instructors div a:link, #page_lesson_piano .content .instructors div a:hover, #page_lesson_piano .content .instructors div a:active, #page_lesson_piano .content .instructors div .specialty, #page_lesson_strings .content .instructors div a:visited, #page_lesson_strings .content .instructors div a:link, #page_lesson_strings .content .instructors div a:hover, #page_lesson_strings .content .instructors div a:active, #page_lesson_strings .content .instructors div .specialty, #page_lesson_drum .content .instructors div a:visited, #page_lesson_drum .content .instructors div a:link, #page_lesson_drum .content .instructors div a:hover, #page_lesson_drum .content .instructors div a:active, #page_lesson_drum .content .instructors div .specialty, #page_lesson_guitar .content .instructors div a:visited, #page_lesson_guitar .content .instructors div a:link, #page_lesson_guitar .content .instructors div a:hover, #page_lesson_guitar .content .instructors div a:active, #page_lesson_guitar .content .instructors div .specialty,
+    #page_lesson_voice .content .instructors div a:visited,
+    #page_lesson_voice .content .instructors div a:link,
+    #page_lesson_voice .content .instructors div a:hover,
+    #page_lesson_voice .content .instructors div a:active,
+    #page_lesson_voice .content .instructors div .specialty, #page_lesson_doublebass .content .instructors div a:visited, #page_lesson_doublebass .content .instructors div a:link, #page_lesson_doublebass .content .instructors div a:hover, #page_lesson_doublebass .content .instructors div a:active, #page_lesson_doublebass .content .instructors div .specialty, #page_suzuki .content .instructors div a:visited, #page_suzuki .content .instructors div a:link, #page_suzuki .content .instructors div a:hover, #page_suzuki .content .instructors div a:active, #page_suzuki .content .instructors div .specialty {
+      color: #BE1F20;
+      font-size: 0.9375rem;
+      display: block; }
+      #page_lesson_piano .content .instructors div a:visited img, #page_lesson_piano .content .instructors div a:link img, #page_lesson_piano .content .instructors div a:hover img, #page_lesson_piano .content .instructors div a:active img, #page_lesson_piano .content .instructors div .specialty img, #page_lesson_strings .content .instructors div a:visited img, #page_lesson_strings .content .instructors div a:link img, #page_lesson_strings .content .instructors div a:hover img, #page_lesson_strings .content .instructors div a:active img, #page_lesson_strings .content .instructors div .specialty img, #page_lesson_drum .content .instructors div a:visited img, #page_lesson_drum .content .instructors div a:link img, #page_lesson_drum .content .instructors div a:hover img, #page_lesson_drum .content .instructors div a:active img, #page_lesson_drum .content .instructors div .specialty img, #page_lesson_guitar .content .instructors div a:visited img, #page_lesson_guitar .content .instructors div a:link img, #page_lesson_guitar .content .instructors div a:hover img, #page_lesson_guitar .content .instructors div a:active img, #page_lesson_guitar .content .instructors div .specialty img,
+      #page_lesson_voice .content .instructors div a:visited img,
+      #page_lesson_voice .content .instructors div a:link img,
+      #page_lesson_voice .content .instructors div a:hover img,
+      #page_lesson_voice .content .instructors div a:active img,
+      #page_lesson_voice .content .instructors div .specialty img, #page_lesson_doublebass .content .instructors div a:visited img, #page_lesson_doublebass .content .instructors div a:link img, #page_lesson_doublebass .content .instructors div a:hover img, #page_lesson_doublebass .content .instructors div a:active img, #page_lesson_doublebass .content .instructors div .specialty img, #page_suzuki .content .instructors div a:visited img, #page_suzuki .content .instructors div a:link img, #page_suzuki .content .instructors div a:hover img, #page_suzuki .content .instructors div a:active img, #page_suzuki .content .instructors div .specialty img {
+        display: block;
+        margin-bottom: 1.125rem; }
+    #page_lesson_piano .content .instructors div .specialty, #page_lesson_strings .content .instructors div .specialty, #page_lesson_drum .content .instructors div .specialty, #page_lesson_guitar .content .instructors div .specialty,
+    #page_lesson_voice .content .instructors div .specialty, #page_lesson_doublebass .content .instructors div .specialty, #page_suzuki .content .instructors div .specialty {
+      color: black; }
+#page_lesson_piano .content .button, #page_lesson_strings .content .button, #page_lesson_drum .content .button, #page_lesson_guitar .content .button,
+#page_lesson_voice .content .button, #page_lesson_doublebass .content .button, #page_suzuki .content .button {
+  background-color: #BE1F20; }
+  #page_lesson_piano .content .button a, #page_lesson_strings .content .button a, #page_lesson_drum .content .button a, #page_lesson_guitar .content .button a,
+  #page_lesson_voice .content .button a, #page_lesson_doublebass .content .button a, #page_suzuki .content .button a {
+    color: white;
+    font-size: 1.125rem;
+    padding: 0.3125rem 1rem; }
+
+#rentals_guitar #rental_prices .model {
+  text-align: left; }
+
+/* ---------------------------------------------------------------------------*/
+/* FOOTER --------------------------------------------------------------------*/
+/* ---------------------------------------------------------------------------*/
+footer {
+  background-color: #EAEAEA;
+  display: block;
+  position: relative;
+  top: 8.4375rem;
+  width: 100%; }
+  footer #accepted-cards {
+    background-color: #F7F7F7;
+    color: #ACACAC;
+    display: block;
+    font-size: 0.75rem;
+    padding: 1.5rem 0;
+    text-align: center; }
+    footer #accepted-cards img {
+      margin-left: 1rem;
+      vertical-align: middle; }
+  footer .footer-link, footer .fat-footer nav div ul li a:link, footer .fat-footer nav div ul li a:visited, footer .fat-footer nav .address span {
+    color: #8a8688;
+    font-family: "Muli";
+    font-size: 0.75rem; }
+  footer .fat-footer {
+    background-color: #EAEAEA;
+    display: block;
+    padding-top: 2.1875rem;
+    width: 100%; }
+    footer .fat-footer nav {
+      display: block;
+      margin: 0 auto;
+      padding-bottom: 2.1875rem; }
+      footer .fat-footer nav div {
+        display: inline-block;
+        vertical-align: top;
+        width: 18%; }
+        footer .fat-footer nav div ul, footer .fat-footer nav div h2, footer .fat-footer nav div span, footer .fat-footer nav div img {
+          left: 50%;
+          position: relative; }
+        footer .fat-footer nav div h2 {
+          font-size: 1rem;
+          font-weight: bold;
+          color: #494949;
+          margin-bottom: 1rem; }
+        footer .fat-footer nav div ul {
+          margin-left: 0; }
+          footer .fat-footer nav div ul li {
+            line-height: 1rem; }
+      footer .fat-footer nav .social ul {
+        margin-bottom: 0.3125rem; }
+        footer .fat-footer nav .social ul li {
+          display: inline; }
+          footer .fat-footer nav .social ul li a:link, footer .fat-footer nav .social ul li a:visited {
+            color: #494949;
+            font-size: 2rem;
+            margin-right: 0.3125rem; }
+        footer .fat-footer nav .social ul li:last-child a:link, footer .fat-footer nav .social ul li:last-child a:visited {
+          margin-right: 0; }
+  footer .copyright {
+    width: 100%;
+    background-color: #494949; }
+    footer .copyright > .wrap {
+      background-color: #494949;
+      display: block;
+      margin: 0 auto;
+      padding: 1.5rem 0;
+      vertical-align: middle;
+      width: 82%; }
+      footer .copyright > .wrap .wrap {
+        display: inline-block; }
+        footer .copyright > .wrap .wrap:first-of-type {
+          overflow: visible;
+          white-space: nowrap;
+          width: 60%; }
+        footer .copyright > .wrap .wrap:last-of-type {
+          width: 40%; }
+        footer .copyright > .wrap .wrap ul, footer .copyright > .wrap .wrap span {
+          color: #8a8688;
+          display: block;
+          font-family: Muli;
+          font-size: 0.6875rem;
+          width: 100%; }
+        footer .copyright > .wrap .wrap ul {
+          list-style: none;
+          text-align: left; }
+          footer .copyright > .wrap .wrap ul li {
+            display: inline-block;
+            border-right-color: inherit;
+            border-right-style: solid;
+            border-right-width: 1px; }
+            footer .copyright > .wrap .wrap ul li a:link, footer .copyright > .wrap .wrap ul li a:visited {
+              color: inherit;
+              font-family: inherit;
+              margin: 0 1rem 0 0.75rem; }
+          footer .copyright > .wrap .wrap ul li:first-child a:link, footer .copyright > .wrap .wrap ul li:first-child a:visited {
+            left-margin: 0; }
+          footer .copyright > .wrap .wrap ul li:last-child {
+            border: 0; }
+            footer .copyright > .wrap .wrap ul li:last-child a:link, footer .copyright > .wrap .wrap ul li:last-child a:visited {
+              right-margin: 0; }
+        footer .copyright > .wrap .wrap span {
+          text-align: right; }
+
+/*# sourceMappingURL=style.css.map */

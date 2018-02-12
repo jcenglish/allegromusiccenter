@@ -1,0 +1,277 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Allegro Music Center</title>
+        <link href='http://fonts.googleapis.com/css?family=Muli|Open+Sans:400,300,700,900' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+        <link rel="stylesheet" type="text/css" href="slick/slick.css">
+        <link rel="stylesheet" type="text/css" href="css/font-icons.css">
+        <link rel="stylesheet" media="screen and (max-width:63.5em)" href="css/style-sm.css">
+        <link rel="stylesheet" media="screen and (min-width:63.5625em)" href="css/style-lrg.css">
+
+    </head>
+
+    <body>
+        <header>
+            <!--#config timefmt="%A" --> <!--#echo var="DATE_LOCAL" -->
+            <a href="." class="logo large"><img src="img/logo_allegro_big.png" alt=''></a><!--
+            --><div class='container'>
+                <a href="." class="logo small"><img src="img/logo_allegro_big.png" alt=''></a><!--
+                --><div class="search">
+                    <input type="text" placeholder="Search"><a class='button' href=""><img src="img/icon_search.png" alt=""></a>
+                </div><!--
+                --><div id="nav-ecomm">
+                    <span id="nav-open" class="button small"><img src='img/icon_menu.png' alt=''><span>Menu</span></span><a href="#" class="button"><img src='img/icon_user.png' alt=''><span>My Account</span></a><a href="#" class="button"><img src='img/icon_basket.png' alt=''><span>My Cart</span><i class="large icon-triangle-down"></i></a>
+                </div><!--
+                --><nav  id="nav-primary">
+                    <div class="small" id="nav-close">
+                        <img src='img/icon_menu-close.png' alt=''>Menu
+                    </div>
+                    <ul id="nav-level-1">
+                        <li class="nav-item">
+                            <span class="has-nav-sub">Products<i class="large icon-triangle-down"></i><i class="large icon-triangle-up"></i><i class="small icon-chevron-right"></i></span>
+                            <ul class="nav-level-2 nav-sub">
+                                <li class="nav-item">
+                                    <span class="has-nav-sub">String Instruments<i class="small icon-chevron-right"></i><i class="small icon-chevron-down"></i></span>
+                                    <ul class="nav-level-3 nav-sub">
+                                        <li class="nav-item"><a href="#" class="">Violins</a></li>
+                                        <li class="nav-item"><a href="#" class="">Violas</a></li>
+                                        <li class="nav-item"><a href="#" class="">Cellos</a></li>
+                                        <li class="nav-item"><a href="#" class="">Basses</a></li>
+                                        <!--<div class="large"><a href="#">View All String Instruments</a></div>-->
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <span class="has-nav-sub">Bows<i class="small icon-chevron-right"></i><i class="small icon-chevron-down"></i></span>
+                                    <ul class="nav-level-3 nav-sub">
+                                        <li class="nav-item"><a href="#" class="">Violin Bows</a></li>
+                                        <li class="nav-item"><a href="#" class="">Viola Bows</a></li>
+                                        <li class="nav-item"><a href="#" class="">Cello Bows</a></li>
+                                        <li class="nav-item"><a href="#" class="">Bass Bows</a></li>
+                                        <!--<div class="large"><a href="#">View All Bows</a></div>-->
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <span class="has-nav-sub">Band &amp; Orchestra<i class="small icon-chevron-right"></i><i class="small icon-chevron-down"></i></span>
+                                    <ul class="nav-level-3 nav-sub">
+                                        <li class="nav-item"><a href="#" class="">Clarinets</a></li>
+                                        <li class="nav-item"><a href="#" class="">Flutes</a></li>
+                                        <li class="nav-item"><a href="#" class="">French Horns</a></li>
+                                        <li class="nav-item"><a href="#" class="">Oboes</a></li>
+                                        <li class="nav-item"><a href="#" class="">Piccolos</a></li>
+                                        <li class="nav-item"><a href="#" class="">Trombones</a></li>
+                                        <li class="nav-item"><a href="#" class="">Trumpets</a></li>
+                                        <!--<div class="large"><a href="#">View All Band &amp; Orchestra</a></div>-->
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <span class="has-nav-sub">Guitars<i class="small icon-chevron-right"></i><i class="small icon-chevron-down"></i></span>
+                                    <ul class="nav-level-3 nav-sub">
+                                        <li class="nav-item"><a href="#" class="">Nylon String</a></li>
+                                        <li class="nav-item"><a href="#" class="">Steel String</a></li>
+                                        <li class="nav-item"><a href="#" class="">Nylon String Acoustic-Electric</a></li>
+                                        <li class="nav-item"><a href="#" class="">Steel String Acoustic-Electric</a></li>
+                                        <li class="nav-item"><a href="#" class="">12-String</a></li>
+                                        <li class="nav-item"><a href="#" class="">12-String Acoustic-Electric</a></li>
+                                        <li class="nav-item"><a href="#" class="">Left-Handed Nylon String</a></li>
+                                        <!--<div class="large"><a href="#">View All Guitars</a></div>-->
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <span class="has-nav-sub">Cases &amp; Bags<i class="small icon-chevron-right"></i><i class="small icon-chevron-down"></i></span>
+                                    <ul class="nav-level-3 nav-sub">
+                                        <li class="nav-item"><a href="#" class="">Violin Cases</a></li>
+                                        <li class="nav-item"><a href="#" class="">Viola Cases</a></li>
+                                        <li class="nav-item"><a href="#" class="">Cello Cases</a></li>
+                                        <li class="nav-item"><a href="#" class="">Bass Cases</a></li>
+                                        <li class="nav-item"><a href="#" class="">Guitar Cases</a></li>
+                                        <!--<div class="large"><a href="#">View All Cases &amp; Bags</a></div>-->
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <span class="has-nav-sub">Accessories<i class="small icon-chevron-right"></i><i class="small icon-chevron-down"></i></span>
+                                    <ul class="nav-level-3 nav-sub">
+                                        <li class="nav-item"><a href="#" class="">Metronomes &amp; Tuners</a></li>
+                                        <li class="nav-item"><a href="#" class="">Stands</a></li>
+                                        <li class="nav-item"><a href="#" class="">String Instrument Accessories</a></li>
+                                        <li class="nav-item"><a href="#" class="">Strings</a></li>
+                                        <!--<div class="large"><a href="#">View All Accessories</a></div>-->
+                                    </ul>
+                                </li>
+                                <li class="nav-item"><a href="#">Sheet Music<i class="small icon-chevron-right"></i></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="about.html">About Us</a></li>
+                        <li class="nav-item"><a href="rentals.html">Rentals</a></li>
+                        <li class="nav-item"><a href="music-education.html">Music Education</a></li>
+                        <li class="nav-item"><span class="has-nav-sub">Services<i class="large icon-triangle-down"></i><i class="large icon-triangle-up"></i><i class="small icon-chevron-right"></i><i class="small icon-chevron-down"></i></span>
+                            <ul class="nav-level-2 nav-sub">
+                                <li class="nav-item"><a href="repairs-restoration.html" class="inverted-colors ">Repairs &amp; Restoration</a></li>
+                                <li class="nav-item"><a href="repairs-restoration.html#a_care-maint" class="inverted-colors ">Instrument Care &amp; Maintenance</a></li>
+                                <li class="nav-item"><a href="repairs-restoration.html#a_appraisals" class="inverted-colors ">Appraisals</a></li>
+                                <li class="nav-item"><a href="repairs-restoration.html#a_consignment" class="inverted-colors ">Consignment</a></li>
+                                <li class="nav-item"><a href="repairs-restoration.html#a_loan" class="inverted-colors ">Instrument Loan</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="#">Blog</a></li>
+                        <li class="nav-item"><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <!--
+                    <div id ="level-2-bg" class="large"></div>
+                    <div id ="level-3-bg" class="large"></div>
+                    -->
+                    <div id="nav-back" class="small"><i class="icon-left-open-big"></i>Main Menu</div>
+                </nav>
+            </div><div id="overlay-small"></div>
+        </header>
+
+
+        <!-- ________________________________________________________________________-->
+        <!-- MAIN CONTENT ___________________________________________________________-->
+        <!-- ________________________________________________________________________-->
+        
+         <main class="page_not-home page_lesson_"   id="page_lesson_strings">
+             <div id="overlay-large"></div>
+            <div class='back large'><a href='music-education.html'><i class='icon-triangle-left'></i>Back to Music Education</a></div>
+            <div class='reorder'>
+            <h1>Violin, Viola &amp; Cello Lessons</h1>
+            <img src="http://placehold.it/150x150" alt='Piano Lessons'>
+            </div>
+            <div class='content'>
+                
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+
+                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate</p>
+                <h2 class='fancy'>Our Violin Instructors</h2>
+                <section class='instructors'>
+                    <div><a href=''><img src="http://placehold.it/150x150" alt='Instructor: Beatriz Vera'>Beatriz Vera</a></div></section>
+                <div class='button'><a href=''>Request Private Lessons</a></div>
+            </div>
+            
+            <div class='coupon'>
+                <div class='wrap'>
+                    <div><h2>Instrument<br>
+                            Offer</h2></div><div><p>Receive 25% off of any violin outfit or receive 25% off any guitar valued at $150 
+                            or less, when enrolling for the corresponding instrument'slessons. To be eligible 
+                            for this special offer, the student must enroll and pre-pay for either:</p>
+                        <ul>
+                            <li>One semester of Allegro School of Music's Suzuki violin program</li>
+                            <li>Five (5) half hour or five (5) one hour lessons at Allegro School of Music</li>
+                        </ul></div>
+                </div>
+            </div>
+        </main>
+<!-- ________________________________________________________________________-->
+        <!-- FOOTER _________________________________________________________________-->
+        <!-- ________________________________________________________________________-->
+        <footer>
+            <div id="accepted-cards">
+                We accept <img src="img/cards.png" alt="VISA, MasterCard, Paypal, American Express">
+            </div>
+            <div class="fat-footer">
+                <div class="subscribe small">
+                    <h2>Sign up for emails</h2>
+                    <div class="wrap"><div><input type="text" placeholder="you@where.com"></div><a href="#" class="button">Subscribe</a></div>
+                </div>
+                <nav>
+                    <div class="large">
+                        <h2>Customer Service</h2>
+                        <ul>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms of Payment</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms of Sale</a>
+                            </li>
+                            <li>
+                                <a href="#">Delivery Terms and Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#">Returns and Refunds</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="large">
+                        <h2>Information</h2>
+                        <ul>
+                            <li>
+                                <a href="#">Affiliate</a>
+                            </li>
+                            <li>
+                                <a href="#">Cookies</a>
+                            </li>
+                            <li>
+                                <a href="#">How to Shop</a>
+                            </li>
+                            <li>
+                                <a href="#">About Allegro</a>
+                            </li>
+                            <li>
+                                <a href="#">Investor Relations</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="address large">
+                        <h2>Store</h2>
+                        <span>
+                            6869 SW 8th Street<br>
+                            Miami, FL 33144<br>
+                        </span>
+                    </div>
+                    <div class="social">
+                        <h2>Social</h2>
+                        <ul>
+                            <li><a href="#"><i class="icon-twitter-circled"></i></a></li>
+                            <li><a href="#"><i class="icon-pinterest-circled"></i></a></li>
+                            <li><a href="#"><i class="icon-facebook-circled"></i></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#"><i class="icon-gplus-circled"></i></a></li>
+                            <li><a href="#"><i class="icon-tumblr-circled"></i></a></li>
+                            <li><a href="#"><i class="icon-vimeo-circled"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="large">
+                        <img src="http://placehold.it/100x100" alt=''>
+                    </div>
+                </nav>
+
+            </div>
+            <div class="copyright">
+                <div class="wrap">
+                    <div class="wrap">
+                        <ul>
+                            <li><a href="#">Privacy &amp; Cookies</a></li>
+                            <li><a href="#">Terms &amp; Conditions</a></li>
+                            <li class="large"><a href="#">Accessibility</a></li>
+                            <li class="large"><a href="#">Store Directory</a></li>
+                            <li class="large"><a href="#">About Us</a></li>
+                        </ul>
+                    </div><!--
+                    --><div class="wrap"><span>&copy; Allegro Music Center All Rights Reserved</span></div>
+                </div>
+            </div>
+        </footer> 
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+
+        <script src="js/app.js"></script>
+        <script src="js/jquery-nav-plugin.js"></script>
+
+
+    </body>
+
+</html>
